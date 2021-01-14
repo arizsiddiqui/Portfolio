@@ -1,0 +1,44 @@
+body, html{
+	height: 100%;
+	color: #777;
+	line-height: 1.8;
+}
+.bgimg-1{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../imgs/Photo1.jpg);
+	min-height: 100%;
+}
+.bgimg-2{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../imgs/Photo2.jpg);
+	min-height: 100%;
+}
+.bgimg-3{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../imgs/Photo3.jpg);
+	min-height: 100%;
+}
+
+
+.wide{
+	letter-spacing: 10px;
+}
+.hover-opacity{
+	cursor: pointer;
+}
+
+@media only screen and (max-device-width: 1600 px){
+	.bgimg{
+		background-attachment: scroll;
+		min-height: 400px;
+	}
+}

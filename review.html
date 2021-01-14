@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sylvie's Bistro</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/ReviewStyle.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style1.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/lato.css">
+	<style type="text/css">
+		body, h1, h3, h4, h5, h6{
+			font-family: "Lato", sans-serif;
+		}
+
+		.feedback_box{
+			margin-left: 20%;
+			margin-right: 20%;
+		}
+	</style>
+</head>
+<body>
+<div class='top'>
+	<div class="bar card animate-top black" id='Navbar'>
+		<a href="index.html" class="bar-item button">HOME</a>
+		<a href ="menu.html" class="bar-item button hide-small">MENU</a>
+		<a href="offers.html"class="bar-item button hide-small">OFFERS</a>
+		<a class="bar-item button hide-small disabled">REVIEW</a>
+		<a href="contact.html" class="bar-item button hide-small">CONTACT</a>
+		<a class="display-middle padding-large black xlarge wide animate-opacity">SYLVIE'S BISTRO</a>	
+	</div>
+</div>
+<div id="MobNav" class="bar-block black hide hide-large hide-medium">
+	<a href="index.html" class="bar-item button">HOME</a>
+	<a href="menu.html" class="bar-item button">MENU</a>
+	<a href="offers.html" class="bar-item button">OFFERS</a>
+	<a href="contact.html" class="bar-item button">CONTACT</a>
+</div>
+
+<div class="bgimg display-container opacity-min" id="home">
+	<div class="display-middle" style="white-space: nowrap;">
+		<span class="center padding-large black xlarge wide animate-opacity">REVIEW</span>	
+	</div>
+</div>
+<div class="content container padding-64" id="review">
+	<h3 class="center">GIVE US A REVIEW</h3>
+	<p class="center"><em>We'd love to hear from you! Even if it's not all moonshine.</em></p>
+</div>
+<div class="container center feedback_box">
+<form>
+      <div class="row-padding" style="margin:0 -16px 8px -16px">
+            <input class="input border" type="text" placeholder="Name" required name="Name">
+        </div>
+      <p><textarea class="input padding-16 border" placeholder="Write your thoughts in here..." required name="Feedback"></textarea></p>
+      <p><button class="button grey block hover-green" type="submit"> SUBMIT FEEDBACK</button></p>
+    </form>
+</div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+	function toggleFunction(){
+		var x = document.getElementById("MobNav");
+		if (x.className.indexOf("show") == -1) {
+			x.className += "show";
+		}
+		else{
+			x.className = x.className.replace(" show", "");
+		}
+	}
+</script>
+</body>
+</html>

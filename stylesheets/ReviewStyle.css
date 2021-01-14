@@ -1,0 +1,25 @@
+body, html{
+	height: 100%;
+	color: #777;
+	line-height: 1.8;
+}
+.bgimg{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(ReviewImg.jpg);
+	min-height: 100%;
+}
+.wide{
+	letter-spacing: 10px;
+}
+.hover-opacity{
+	cursor: pointer;
+}
+@media only screen and (max-device-width: 1600 px){
+	.bgimg{
+		background-attachment: scroll;
+		min-height: 400px;
+	}
+}

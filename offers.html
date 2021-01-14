@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sylvie's Bistro</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/OffersStyle.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style1.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/lato.css">
+	<style type="text/css">
+		body, h1, h3, h4, h5, h6{
+			font-family: "Lato", sans-serif;
+		}
+	</style>
+</head>
+<body>
+<div class='top'>
+	<div class="bar card animate-top black" id='Navbar'>
+		<a href="index.html" class="bar-item button">HOME</a>
+		<a href ="menu.html" class="bar-item button hide-small">MENU</a>
+		<a class="bar-item button hide-small disabled">OFFERS</a>
+		<a href="review.html" class="bar-item button hide-small">REVIEW</a>
+		<a href="contact.html" class="bar-item button hide-small">CONTACT</a>
+		<a class="display-middle padding-large black xlarge wide animate-opacity">SYLVIE'S BISTRO</a>	
+	</div>
+</div>
+<div id="MobNav" class="bar-block black hide hide-large hide-medium">
+	<a href="index.html" class="bar-item button">HOME</a>
+	<a href="menu.html" class="bar-item button">MENU</a>
+	<a href="review.html" class="bar-item button">REVIEW</a>
+	<a href="contact.html" class="bar-item button">CONTACT</a>
+</div>
+
+<div class="bgimg display-container opacity-min" id="offers">
+	<div class="display-middle" style="white-space: nowrap;">
+		<span class="center padding-large black xlarge wide animate-opacity">OFFERS</span>	
+	</div>
+</div>
+<div class="content container padding-64" id="menu">
+	<h3 class="center">OFFERS</h3>
+	<p class="center"><em>Running low? No issues, just pick from offers down below:</em></p>
+</div>
+<div id="pizza" class="content container menu padding-32 white">
+      <h1><b>Buy 1 Get 1 Free</b></h1>
+      <p class="text-grey">Get 2 Margheritas for the price of 1</p>
+      <hr>
+   
+      <h1><b>Ultimate Saver Combo</b></h1>
+      <p class="text-grey">Get a Margherita, Spaghetti Classica and Today's Soup for ₹250 only</p>
+      <hr>
+    </div>
+    <div class="content container padding-64" id="menu">
+	<p class="center">Watch this space for more offers!</p>
+</div>
+<script type="text/javascript">
+	function toggleFunction(){
+		var x = document.getElementById("MobNav");
+		if (x.className.indexOf("show") == -1) {
+			x.className += "show";
+		}
+		else{
+			x.className = x.className.replace(" show", "");
+		}
+	}
+</script>
+</body>
+</html>

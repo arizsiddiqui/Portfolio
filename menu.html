@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sylvie's Bistro</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/MenuStyle.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style1.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/lato.css">
+	<style type="text/css">
+		body, h1, h3, h4, h5, h6{
+			font-family: "Lato", sans-serif;
+		}
+	</style>
+</head>
+<body>
+<div class='top'>
+	<div class="bar card animate-top black" id='Navbar'>
+		<a href="index.html" class="bar-item button">HOME</a>
+		<a class="bar-item button hide-small disabled">MENU</a>
+		<a href="offers.html" class="bar-item button hide-small">OFFERS</a>
+		<a href="review.html" class="bar-item button hide-small">REVIEW</a>
+		<a href="contact.html" class="bar-item button hide-small">CONTACT</a>
+		<a class="display-middle padding-large black xlarge wide">SYLVIE'S BISTRO</a>	
+	</div>
+</div>
+<div id="MobNav" class="bar-block black hide hide-large hide-medium">
+	<a href="index.html" class="bar-item button">HOME</a>
+	<a href="offers.html" class="bar-item button">OFFERS</a>
+	<a href="review.html" class="bar-item button">REVIEW</a>
+	<a href="contact.html" class="bar-item button">CONTACT</a>
+</div>
+
+<div class="bgimg display-container opacity-min" id="home">
+	<div class="display-middle" style="white-space: nowrap;">
+		<span class="center padding-large black xlarge wide animate-opacity">MENU</span>	
+	</div>
+</div>
+<div class="content container padding-64" id="menu">
+	<h3 class="center">MENU</h3>
+	<p class="center"><em>We do not offer online ordering yet, but you can still choose your favorites ;)</em></p>
+	<div class="container padding-64 xlarge" id="menu">
+  <div class="content">
+  
+    <div class="row center ">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="col s4 tablink padding-large hover-light-grey">Pizza</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="col s4 tablink padding-large hover-light-grey">Pasta</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="col s4 tablink padding-large hover-light-grey">Starter</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="container menu padding-32 white">
+      <h1><b>Margherita</b> <span class="right tag dark-grey round">₹125</span></h1>
+      <p class="text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+      <hr>
+   
+      <h1><b>Formaggio</b> <span class="right tag dark-grey round">₹155</span></h1>
+      <p class="text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+      <hr>
+      
+      <h1><b>Chicken</b> <span class="right tag dark-grey round">₹170</span></h1>
+      <p class="text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+      <hr>
+
+      <h1><b>Pineapple'o'clock</b> <span class="right tag dark-grey round">₹165</span></h1>
+      <p class="text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+      <hr>
+
+      <h1><b>Meat Town</b> <span class="tag grey round">Popular</span><span class="right tag dark-grey round">₹200</span></h1>
+      <p class="text-grey">Fresh tomatoes, mozzarella, hot pepperoni, hot sausage,  chicken</p>
+      <hr>
+
+      <h1><b>Parma</b> <span class="tag grey round">New</span><span class="right tag dark-grey round">₹215</span></h1>
+      <p class="text-grey">Fresh tomatoes, mozzarella, parma, fresh arugula</p>
+    </div>
+
+    <div id="Pasta" class="container menu padding-32 white">
+      <h1><b>Lasagna</b> <span class="tag grey round">Popular</span> <span class="right tag dark-grey round">₹135</span></h1>
+      <p class="text-grey">Special sauce, mozzarella, parmesan </p>
+      <hr>
+   
+      <h1><b>Ravioli</b> <span class="right tag dark-grey round">₹145</span></h1>
+      <p class="text-grey">Ravioli filled with cheese</p>
+      <hr>
+      
+      <h1><b>Spaghetti Classica</b> <span class="right tag dark-grey round">₹110</span></h1>
+      <p class="text-grey">Fresh tomatoes and onions </p>
+      <hr>
+
+      <h1><b>Seafood pasta</b> <span class="right tag dark-grey round">₹255</span></h1>
+      <p class="text-grey">Salmon, shrimp, lobster, garlic</p>
+    </div>
+
+
+    <div id="Starter" class="container menu padding-32 white">
+      <h1><b>Today's Soup</b> <span class="tag grey round">Seasonal</span><span class="right tag dark-grey round">₹55</span></h1>
+      <p class="text-grey">Ask the waiter</p>
+      <hr>
+   
+      <h1><b>Bruschetta</b> <span class="right tag dark-grey round">₹85</span></h1>
+      <p class="text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+      <hr>
+      
+      <h1><b>Garlic bread</b> <span class="right tag dark-grey round">₹95</span></h1>
+      <p class="text-grey">Grilled ciabatta, garlic butter, onions</p>
+      <hr>
+      
+      <h1><b>Tomozzarella</b> <span class="right tag dark-grey round">₹105</span></h1>
+      <p class="text-grey">Tomatoes and mozzarella</p>
+    </div><br>
+
+  </div>
+</div>
+
+
+</div>
+<script type="text/javascript">
+	function toggleFunction(){
+		var x = document.getElementById("MobNav");
+		if (x.className.indexOf("show") == -1) {
+			x.className += "show";
+		}
+		else{
+			x.className = x.className.replace(" show", "");
+		}
+	}
+	function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" light-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " light-grey";
+}
+document.getElementById("myLink").click();
+</script>
+</body>
+</html>

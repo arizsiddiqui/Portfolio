@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sylvie's Bistro</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/ContactStyle.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style1.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/lato.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		body, h1, h3, h4, h5, h6{
+			font-family: "Lato", sans-serif;
+		}
+	</style>
+</head>
+<body>
+<div class='top'>
+	<div class="bar card animate-top black" id='Navbar'>
+		<a href="index.html" class="bar-item button">HOME</a>
+		<a href ="menu.html" class="bar-item button hide-small">MENU</a>
+		<a href="offers.html"class="bar-item button hide-small">OFFERS</a>
+		<a href="review.html" class="bar-item button hide-small">REVIEW</a>
+		<a class="bar-item button hide-small disabled">CONTACT</a>
+		<a class="display-middle padding-large black xlarge wide animate-opacity">SYLVIE'S BISTRO</a>	
+	</div>
+</div>
+<div id="MobNav" class="bar-block black hide hide-large hide-medium">
+	<a href="index.html" class="bar-item button">HOME</a>
+	<a href="menu.html" class="bar-item button">MENU</a>
+	<a href="offers.html" class="bar-item button">OFFERS</a>
+	<a href="review.html" class="bar-item button">REVIEW</a>
+</div>
+
+<div class="bgimg display-container opacity-min" id="home">
+	<div class="display-middle" style="white-space: nowrap;">
+		<span class="center padding-large black xlarge wide animate-opacity">CONTACT</span>	
+	</div>
+</div>
+<div class="content container padding-64" id="menu">
+	<h3 class="center">CONTACT US</h3>
+	<p class="center"><em>Here's where to find us.</em></p>
+</div>
+<div class="content container padding-64" id="contact">
+  <div class="row padding-32 section">
+    <div class="col m4 container">
+      <div id="googleMap" class="round-large greyscale" style="width:100%;height:400px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18506.341325454785!2d80.04406618365633!3d12.812287629187724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f70d37c35faf%3A0x150be8ecf0c8f817!2sSRM%20Institute%20of%20Science%20%26%20Technology!5e0!3m2!1sen!2sin!4v1570961724919!5m2!1sen!2sin" width="600" height="600" frameborder="0" style="border:0;width:100%;height:500px;" allowfullscreen="true"></iframe></div>
+    </div>
+    <div class="col m8 container section">
+      <div class="large margin-bottom large">
+        <i class="fa fa-map-marker fa-fw hover-text-black xlarge margin-right"></i> SRMIST, Tamil Nadu<br>
+        <i class="fa fa-phone fa-fw hover-text-black xlarge margin-right"></i> Phone: +91-9876-543210<br>
+        <i class="fa fa-envelope fa-fw hover-text-black xlarge margin-right"></i> Email: abc@srmist.edu.in<br><br>
+        Reserve A Table, Or Ask About Today's Specials:
+        <form>
+      <p><input class="input padding-16 border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="input padding-16 border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="input padding-16 border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-05-10T11:00"></p>
+      <p><input class="input padding-16 border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="button grey block hover-green" type="submit"><i class="fa fa-paper-plane"></i> SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+      </div>
+  </div>
+</div>
+<footer class="center padding-64 opacity hover-opacity-off">
+	<h6> Check Out Our Social Media: </h6>
+  <div class="xlarge section">
+    <i class="fa fa-facebook-official xxlarge hover-opacity hover-text-blue"></i>
+    <i class="fa fa-instagram xxlarge hover-opacity hover-text-purple"></i>
+    <i class="fa fa-twitter xxlarge hover-opacity hover-text-light-blue"></i>
+    <i class="fa fa-tripadvisor xxlarge hover-opacity hover-text-green" ></i>
+    <i class="fa fa-yelp xxlarge hover-opacity hover-text-red"></i>
+    
+  </div>
+
+<script type="text/javascript">
+	function toggleFunction(){
+		var x = document.getElementById("MobNav");
+		if (x.className.indexOf("show") == -1) {
+			x.className += "show";
+		}
+		else{
+			x.className = x.className.replace(" show", "");
+		}
+	}
+</script>
+</body>
+</html>
