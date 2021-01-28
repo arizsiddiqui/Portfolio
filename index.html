@@ -42,41 +42,31 @@ body, html {
   <div class="display-middle" style="white-space:nowrap;">
     <span class="center padding-large animate-opacity"><img src="./imgs/MyLogo.png"></span>
   </div>
+  <a href="javascript:void(0);" onclick="scrollFunction()">
+    <div class="scroll-down-dude">
+    </div>
+  </a>
 </div>
 
 <!-- Container (About Section) -->
 <div class="content container padding-64" id="about">
   <h3 class="center">ABOUT ME</h3>
-  <p class="center"><em>I love photography</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p class="center"><em>Aspiring ML Developer</em></p>
   <div class="row">
-    <div class="col m6 center padding-large">
-      <p><b><i class="fas fa-user margin-right"></i>Ariz Siddiqui</b></p><br>
-      <img src="/w3images/avatar_hat.jpg" class="round image opacity hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    <div class="col m6 center padding-32">
+      <img src="./imgs/MyPhoto.jpg" class="round-large image" alt="Photo of Me" width="80%">
     </div>
 
 
     <div class="col m6 hide-small padding-large">
       <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime earum quis qui blanditiis labore accusantium dolore distinctio atque, quo, placeat nisi voluptates aliquam? Optio ex tempore voluptatum aperiam nisi?</p>
     </div>
   </div>
-  <p class="large center padding-16">Im really good at:</p>
-  <p class="wide"><i class="fas fa-camera"></i>Photography</p>
-  <div class="light-grey">
-    <div class="container padding-small dark-grey center" style="width:90%">90%</div>
-  </div>
-  <p class="wide"><i class="fas fa-laptop"></i>Web Design</p>
-  <div class="light-grey">
-    <div class="container padding-small dark-grey center" style="width:85%">85%</div>
-  </div>
-  <p class="wide"><i class="fas fa-photo"></i>Photoshop</p>
-  <div class="light-grey">
-    <div class="container padding-small dark-grey center" style="width:75%">75%</div>
-  </div>
+  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
 <div class="bgimg-2 display-container opacity-min">
@@ -125,7 +115,6 @@ body, html {
     <div class="col m3">
       <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
     </div>
-    <button class="button padding-large light-grey" style="margin-top:64px">LOAD MORE</button>
   </div>
 </div>
 
@@ -185,12 +174,12 @@ body, html {
 <footer class="center padding-64 opacity hover-opacity-off">
 	<h6>Reach out to me at: </h6>
   <div class="xlarge section">
-    <i class="fab fa-facebook hover-text-blue"></i>
-    <i class="fab fa-instagram hover-text-purple"></i>
-    <i class="fab fa-kaggle hover-text-light-blue"></i>
-	<i class="fab fa-twitter hover-text-light-blue"></i>
-	<i class="fab fa-github hover-text-black"></i>
-	<i class="fab fa-linkedin hover-text-blue"></i>
+    <i class="fab fa-facebook-f hover-text-blue"><a href=""></a></i>
+    <i class="fab fa-instagram hover-text-purple"><a href=""></a></i>
+    <i class="fab fa-kaggle hover-text-light-blue"><a href=""></a></i>
+	<i class="fab fa-twitter hover-text-light-blue"><a href=""></a></i>
+	<i class="fab fa-github hover-text-black"><a href=""></a></i>
+	<i class="fab fa-linkedin hover-text-blue"><a href=""></a></i>
   </div>
   © 2021 Ariz Siddiqui
 </footer>
@@ -208,10 +197,14 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "bar" + " card" + " animate-top" + " grey";
+        navbar.className = "bar" + " card" + " animate-top" + " white";
     } else {
-        navbar.className = navbar.className.replace(" card animate-top grey", "");
+        navbar.className = navbar.className.replace(" card animate-top white", "");
     }
+}
+
+function scrollFunction() {
+  document.getElementById("about").scrollIntoView({behavior: 'smooth'});
 }
 
 function toggleFunction() {
