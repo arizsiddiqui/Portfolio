@@ -30,10 +30,10 @@ body, html {
   </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="bar-block hide hide-large hide-medium">
-    <a href="#about" class="bar-item button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="bar-item button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="bar-item button" onclick="toggleFunction()">CONTACT</a>
+  <div id="navDemo" class="bar-block black hide hide-large hide-medium">
+    <a href="javascript:void(0);" class="bar-item button" onclick="scrollFunction();toggleFunction()">ABOUT</a>
+    <a href="javascript:void(0);" class="bar-item button" onclick="scrollFunction1();toggleFunction()">PORTFOLIO</a>
+    <a href="javascript:void(0);" class="bar-item button" onclick="scrollFunction2();toggleFunction()">CONTACT</a>
   </div>
 </div>
 
@@ -199,12 +199,8 @@ function myFunction() {
     var smallNav = document.getElementById("navDemo")
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         navbar.className = "bar" + " card" + " animate-top" + " white";
-        if (smallNav.className.indexOf("show") == -1) {
-          smallNav.className += " white" + " card";
-        }
     } else {
         navbar.className = navbar.className.replace(" card animate-top white", "");
-        smallNav.className = smallNav.className.replace(" white card", "");
     }
 }
 
@@ -230,7 +226,7 @@ function toggleFunction() {
     if (x.className.indexOf("show") == -1) {
         x.className += " show";
     } else {
-        x.className = x.className.replace(" show", "");
+        x.className = x.className.replace(" show", " hide");
     }
 }
 </script>
