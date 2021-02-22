@@ -8,7 +8,7 @@ body, html{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: url(../imgs/Photo1.jpg);
+	background-image: url(../imgs/Photo1.webp);
 	min-height: 100%;
 }
 .bgimg-2{
@@ -16,7 +16,7 @@ body, html{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: url(../imgs/Photo2.jpg);
+	background-image: url(../imgs/Photo2.webp);
 	min-height: 100%;
 }
 .bgimg-3{
@@ -24,7 +24,7 @@ body, html{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: url(../imgs/IMG_7307.jpeg);
+	background-image: url(../imgs/IMG_7307.webp);
 	min-height: 100%;
 }
 
