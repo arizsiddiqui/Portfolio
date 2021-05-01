@@ -33,7 +33,7 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 [type=search]::-webkit-search-decoration{-webkit-appearance:none}
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
-html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1}html{overflow-x:hidden}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.serif{font-family:serif}
 h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.wide{letter-spacing:4px}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
@@ -187,6 +187,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .pale-blue,.hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
 .text-amber,.hover-text-amber:hover{color:#ffc107!important}
 .text-aqua,.hover-text-aqua:hover{color:#00ffff!important}
+.text-lapis,.hover-text-lapis:hover{color: #306998!important}
 .text-blue,.hover-text-blue:hover{color:#2196F3!important}
 .text-light-blue,.hover-text-light-blue:hover{color:#87CEEB!important}
 .text-brown,.hover-text-brown:hover{color:#795548!important}
