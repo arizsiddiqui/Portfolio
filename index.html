@@ -23,13 +23,13 @@ body, html {
     <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" >
       <i class="fas fa-bars"></i>
     </a>
-    <a href="javascript:void(0);" onclick="topFunction()" class="bar-item button">HOME</a>
-    <a href="javascript:void(0);" onclick="scrollFunction()" class="bar-item button hide-small">ABOUT</a>
-    <a href="javascript:void(0);" onclick="scrollFunction1()" class="bar-item button hide-small"> PORTFOLIO</a>
-    <a href="javascript:void(0);" onclick="scrollFunction2()" class="bar-item button hide-small">CONTACT</a>
+    <a href="javascript:void(0);" onclick="topFunction()" class="bar-item button large padding-large">HOME</a>
+    <a href="javascript:void(0);" onclick="scrollFunction()" class="bar-item button large hide-small padding-large ">ABOUT</a>
+    <a href="javascript:void(0);" onclick="scrollFunction1()" class="bar-item button large hide-small padding-large"> PORTFOLIO</a>
+    <a href="javascript:void(0);" onclick="scrollFunction2()" class="bar-item button large hide-small padding-large">CONTACT</a>
   </div>
 
-  <div id="navDemo" class="bar-block black hide hide-large hide-medium">
+  <div id="smallNav" class="bar-block black hide hide-large hide-medium">
     <a href="javascript:void(0);" class="bar-item button" onclick="scrollFunction();toggleFunction()">ABOUT</a>
     <a href="javascript:void(0);" class="bar-item button" onclick="scrollFunction1();toggleFunction()">PORTFOLIO</a>
     <a href="javascript:void(0);" class="bar-item button" onclick="scrollFunction2();toggleFunction()">CONTACT</a>
@@ -38,7 +38,7 @@ body, html {
 
 <div class="bgimg-1 display-container opacity-min" id="home">
   <div class="display-middle" style="white-space:nowrap;">
-    <span class="center padding-large animate-opacity"><img src="./imgs/MyLogo.webp"></span>
+    <span class="center padding-large animate-opacity"><img src="./imgs/MyLogo.webp" loading="lazy"></span>
   </div>
   <a href="javascript:void(0);" onclick="scrollFunction()">
     <div class="scroll-down-dude">
@@ -66,7 +66,7 @@ body, html {
     qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
-<div class="bgimg-2 display-container opacity-min">
+<div class="bgimg-2 lazy display-container opacity-min">
   <div class="display-middle">
     <span class="xxlarge text-white wide">PORTFOLIO</span>
   </div>
@@ -76,10 +76,12 @@ body, html {
   <h3 class="center">Skills & Projects</h3>
   <p class="center"><em>A list of all projects completed and skills acquired.</em></p><br>
 
-  
+  <div class="row-padding center section">
+    <p class="xxxlarge">Projects</p>
+  </div>
   <div class="row-padding center">
     <div class="col m3 card-4">
-      <img src="./imgs/clik.png" style="width:91%" class="hover-opacity" alt="stuff">
+      <img src="./imgs/clik.png" loading="lazy" style="width:91%" class="hover-opacity" alt="stuff">
       <p class="xlarge">Python - CLIK</p>
       <p class="large">Project</p>
       <a href="https://github.com/MLSA-SRM/Python-CLIK"><i class="fab fa-github text-black xxlarge padding"></i></a>  
@@ -87,7 +89,7 @@ body, html {
     </div>
 
     <div class="col m3 card-4">
-      <img src="./imgs/lxcn.png" style="width:65%" class="hover-opacity" alt="stuff">
+      <img src="./imgs/lxcn.png" loading="lazy" style="width:65%" class="hover-opacity" alt="stuff">
       <p class="xlarge">Lexicon</p>
       <p class="large">Project</p>
       <a href="https://github.com/MLSA-SRM/Lexicon-The-Auto-Tagger"><i class="fab fa-github text-black xxlarge padding"></i></a>  
@@ -95,7 +97,7 @@ body, html {
     </div>
 
     <div class="col m3 card-4">
-      <img src="./imgs/MyLogo-Dark.png" style="width:55%" class="hover-opacity" alt="stuff">
+      <img src="./imgs/MyLogo-Dark.png" loading="lazy" style="width:55%" class="hover-opacity" alt="stuff">
       <p class="xlarge">Portfolio</p>
       <p class="large">Project</p>
       <a href="https://github.com/arizsiddiqui/Portfolio"><i class="fab fa-github text-black xxlarge padding-small"></i></a>  
@@ -105,7 +107,7 @@ body, html {
     </div>
 
     <div class="col m3 card-4">
-      <img src="./imgs/landmarks.png" style="width:65%" class="hover-opacity" alt="stuff">
+      <img src="./imgs/landmarks.png" loading="lazy" style="width:65%" class="hover-opacity" alt="stuff">
       <p class="xlarge">Landmarks</p>
       <p class="large">Project</p>
       <i class="fab fa-swift xxlarge text-deep-orange padding"></i>
@@ -113,76 +115,80 @@ body, html {
   </div>
 
   <div class="row-padding center section">
+    <p class="xxxlarge">Skills</p>
+  </div>
+
+  <div class="row-padding center section">
     <div class="col m3 card-4">
-      <img src="./imgs/python.png" style="width:33.5%" class="hover-opacity" alt="stuff">
+      <img src="./imgs/python.png" loading="lazy" style="width:33.5%" class="hover-opacity" alt="stuff">
       <p class="xlarge">Python</p>
       <p class="large">Skill</p>
     </div>
 
     <div class="col m3 card-4">
-      <img src="./imgs/swift.svg" style="width:33.5%" class="hover-opacity" alt="stuff">
+      <img src="./imgs/swift.svg" loading="lazy" style="width:33.5%" class="hover-opacity" alt="stuff">
       <p class="xlarge">Swift</p>
       <p class="large">Skill</p>
     </div>
 
     <div class="col m3 card-4">
-      <img src="./imgs/cpp.svg" style="width:30%" class="hover-opacity" alt="stuff">
+      <img src="./imgs/cpp.svg" loading="lazy" style="width:30%" class="hover-opacity" alt="stuff">
       <p class="xlarge">C++</p>
       <p class="large">Skill</p>
     </div>
 
     <div class="col m3 card-4">
-      <img src="./imgs/html5.png" style="width:33.5%" class="hover-opacity" alt="stuff">
+      <img src="./imgs/html5.png" loading="lazy" style="width:33.5%" class="hover-opacity" alt="stuff">
       <p class="xlarge">HTML 5</p>
       <p class="large">Skill</p>
     </div>
   </div>
   <div class="row-padding center section">
     <div class="col m3 card-4">
-      <img src="./imgs/css3.png" style="width:33.5%" class="hover-opacity" alt="stuff">
+      <img src="./imgs/css3.png" loading="lazy" style="width:33.5%" class="hover-opacity" alt="stuff">
       <p class="xlarge">CSS 3</p>
       <p class="large">Skill</p>
     </div>
 
     <div class="col m3 card-4">
-      <img src="./imgs/javascript.png" style="width:33.5%" class="hover-opacity" alt="stuff">
+      <img src="./imgs/javascript.png" loading="lazy" style="width:33.5%" class="hover-opacity" alt="stuff">
       <p class="xlarge">JavaScript</p>
       <p class="large">Skill</p>
     </div>
 
     <div class="col m3 card-4">
-      <img src="./imgs/nodejs.png" style="width:33.5%" class="hover-opacity" alt="stuff">
+      <img src="./imgs/nodejs.png" loading="lazy" style="width:33.5%" class="hover-opacity" alt="stuff">
       <p class="xlarge">Node.js</p>
       <p class="large">Skill</p>
     </div>
 
     <div class="col m3 card-4">
-      <img src="./imgs/tf.png" style="width:33.5%" class="hover-opacity" alt="stuff">
+      <img src="./imgs/tf.png" loading="lazy" style="width:33.5%" class="hover-opacity" alt="stuff">
       <p class="xlarge">TensorFlow</p>
       <p class="large">Skill</p>
     </div>
   </div>
   <div class="row-padding center section">
     <div class="col m3 card-4">
-      <img src="./imgs/c.png" style="width:33.5%" class="hover-opacity" alt="stuff">
+      <img src="./imgs/c.png" loading="lazy" style="width:33.5%" class="hover-opacity" alt="stuff">
       <p class="xlarge">C</p>
       <p class="large">Skill</p>
     </div>
 
     <div class="col m3 card-4">
-      <img src="./imgs/git.png" style="width:33.5%" class="hover-opacity" alt="stuff">
+      <img src="./imgs/git.png" loading="lazy" style="width:33.5%" class="hover-opacity" alt="stuff">
       <p class="xlarge">Git</p>
       <p class="large">Skill</p>
     </div>
 
     <div class="col m3 card-4">
-      <img src="./imgs/sql.svg" style="width:33.5%" class="hover-opacity" alt="stuff">
+      <img src="./imgs/sql.svg" loading="lazy" style="width:33.5%" class="hover-opacity" alt="stuff">
       <p class="xlarge">SQL</p>
       <p class="large">Skill</p>
     </div>
 
     <div class="col m3 card-4">
-      <img src="./imgs/opencv.png" style="width:36%" class="hover-opacity" alt="stuff">
+      <img src="./imgs/opencv.png" loading="lazy" style="width:36%" class="hover-opacity" alt="stuff">
       <p class="xlarge">OpenCV</p>
       <p class="large">Skill</p>
     </div>
@@ -195,7 +201,7 @@ body, html {
 </div>
 
 
-<div class="bgimg-3 display-container opacity-min">
+<div class="bgimg-3 lazy display-container opacity-min">
   <div class="display-middle">
      <span class="xxlarge text-white wide">CONTACT</span>
   </div>
@@ -208,7 +214,7 @@ body, html {
   <div class="row padding-32 section">
     <div class="col m4 container">
 	  <div id="googleMap" class="round-large greyscale" style="width:100%;height:400px;">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18506.341325454785!2d80.04406618365633!3d12.812287629187724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f70d37c35faf%3A0x150be8ecf0c8f817!2sSRM%20Institute%20of%20Science%20%26%20Technology!5e0!3m2!1sen!2sin!4v1570961724919!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;width:100%;height:400px;"></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18506.341325454785!2d80.04406618365633!3d12.812287629187724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f70d37c35faf%3A0x150be8ecf0c8f817!2sSRM%20Institute%20of%20Science%20%26%20Technology!5e0!3m2!1sen!2sin!4v1570961724919!5m2!1sen!2sin" width="600" height="450" loading="lazy" frameborder="0" style="border:0;width:100%;height:400px;"></iframe>
 	</div>
     </div>
     <div class="col m8 panel">
@@ -239,21 +245,71 @@ body, html {
 <footer class="center padding-64 opacity hover-opacity-off">
 	<h6>Reach out to me at: </h6>
   <div class="xlarge section">
-    <a href="https://www.facebook.com/ariz.siddiqui.10/"><i class="fab fa-facebook-f hover-text-blue xxlarge"></i></a>
-    <a href="https://www.instagram.com/sidd.ariz.iqui/"><i class="fab fa-instagram hover-text-purple xxlarge"></i></a>
-    <a href="https://www.kaggle.com/arizsiddiqui"><i class="fab fa-kaggle hover-text-light-blue xxlarge"></i></a>
-    <a href="https://twitter.com/arizcoffeewala"><i class="fab fa-twitter hover-text-light-blue xxlarge"></i></a>
-    <a href="https://github.com/arizsiddiqui"><i class="fab fa-github hover-text-black xxlarge"></i></a>
+    <a href="https://www.facebook.com/ariz.siddiqui.10/"><i class="fab fa-facebook-f padding-small hover-text-blue xxlarge"></i></a>
+    <a href="https://www.instagram.com/sidd.ariz.iqui/"><i class="fab fa-instagram padding-small hover-text-purple xxlarge"></i></a>
+    <a href="https://www.kaggle.com/arizsiddiqui"><i class="fab fa-kaggle padding-small hover-text-light-blue xxlarge"></i></a>
+    <a href="https://twitter.com/arizcoffeewala"><i class="fab fa-twitter padding-small hover-text-light-blue xxlarge"></i></a>
+    <a href="https://github.com/arizsiddiqui"><i class="fab fa-github padding-small hover-text-black xxlarge"></i></a>
     <a href="https://www.linkedin.com/in/arizsiddiqui/"><i class="fab fa-linkedin hover-text-blue xxlarge"></i></a>
   </div>
   © 2021 Ariz Siddiqui
 </footer>
  
 <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyloadImages;    
+
+  if ("IntersectionObserver" in window) {
+    lazyloadImages = document.querySelectorAll(".lazy");
+    var imageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var image = entry.target;
+          image.classList.remove("lazy");
+          imageObserver.unobserve(image);
+        }
+      });
+    });
+
+    lazyloadImages.forEach(function(image) {
+      imageObserver.observe(image);
+    });
+  } else {  
+    var lazyloadThrottleTimeout;
+    lazyloadImages = document.querySelectorAll(".lazy");
+    
+    function lazyload () {
+      if(lazyloadThrottleTimeout) {
+        clearTimeout(lazyloadThrottleTimeout);
+      }    
+
+      lazyloadThrottleTimeout = setTimeout(function() {
+        var scrollTop = window.pageYOffset;
+        lazyloadImages.forEach(function(img) {
+            if(img.offsetTop < (window.innerHeight + scrollTop)) {
+              img.src = img.dataset.src;
+              img.classList.remove('lazy');
+            }
+        });
+        if(lazyloadImages.length == 0) { 
+          document.removeEventListener("scroll", lazyload);
+          window.removeEventListener("resize", lazyload);
+          window.removeEventListener("orientationChange", lazyload);
+        }
+      }, 20);
+    }
+
+    document.addEventListener("scroll", lazyload);
+    window.addEventListener("resize", lazyload);
+    window.addEventListener("orientationChange", lazyload);
+  }
+});
+
 window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
-    var smallNav = document.getElementById("navDemo")
+    var smallNav = document.getElementById("smallNav")
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         navbar.className = "bar" + " card" + " animate-top" + " white";
     } else {

@@ -28,6 +28,10 @@ body, html{
 	min-height: 100%;
 }
 
+.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
 
 .wide{
 	letter-spacing: 10px;
