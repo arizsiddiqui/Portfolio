@@ -242,3 +242,19 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .border-pale-green,.hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .border-pale-yellow,.hover-border-pale-yellow:hover{border-color:#ffffcc!important}
 .border-pale-blue,.hover-border-pale-blue:hover{border-color:#e7ffff!important}
+.fa-chrome {
+    font-size: 3rem;
+    background: 
+        linear-gradient(to bottom left, transparent 49%,#ea4335 50%) 105% 0%  /37% 30%,
+        linear-gradient(to bottom right,transparent 49%,#fbbc05 50%) 64% 100% /35% 43%,
+       
+        radial-gradient(farthest-side, #4285f4 46%,transparent 47%),
+        linear-gradient( 47deg,        #34a853 42%,transparent 43%),
+        linear-gradient(-72deg,        #fbbc05 42%,transparent 43%),
+        linear-gradient(-199deg,       #ea4335 42%,transparent 43%);
+    background-repeat:no-repeat;
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+  }
