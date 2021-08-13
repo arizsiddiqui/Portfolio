@@ -242,16 +242,4 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .border-pale-green,.hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .border-pale-yellow,.hover-border-pale-yellow:hover{border-color:#ffffcc!important}
 .border-pale-blue,.hover-border-pale-blue:hover{border-color:#e7ffff!important}
-.fa-chrome{
-    background: 
-    linear-gradient(to bottom left, transparent 49%,#ea4335 70%) 112% 0% /50% 33%,
-    linear-gradient(to bottom right,transparent 49%,#fbbc05 50%) 64% 100% /35% 63%,
-    radial-gradient(farthest-side, #4285f4 21%,transparent 38%), 
-    linear-gradient( 47deg, #34a853 45%,transparent 43%),
-    linear-gradient(-72deg, #fbbc05 42%,transparent 43%),
-    linear-gradient(-199deg, #ea4335 100%,transparent 100%);
-  background-repeat:no-repeat;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
+.fa-chrome:hover{background: linear-gradient(to bottom left, transparent 49%,#ea4335 70%) 112% 0% /50% 33%,linear-gradient(to bottom right,transparent 49%,#fbbc05 50%) 64% 100% /35% 63%,radial-gradient(farthest-side, #4285f4 21%,transparent 38%), linear-gradient( 47deg, #34a853 45%,transparent 43%),linear-gradient(-72deg, #fbbc05 42%,transparent 43%),linear-gradient(-199deg, #ea4335 100%,transparent 100%);background-repeat:no-repeat;color: transparent;-webkit-background-clip: text;background-clip: text;}
