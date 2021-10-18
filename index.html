@@ -4,7 +4,7 @@
     <title>Ariz Siddiqui</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#777777">
+    <meta name="theme-color" content="#777777" />
     <meta
       name="description"
       content="All information about Ariz Siddiqui, an aspiring ML Developer from SRM IST."
@@ -621,8 +621,9 @@
         }
 
         function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
+          document
+            .getElementById("home")
+            .scrollIntoView({ behavior: "smooth" });
         }
 
         function toggleFunction() {
