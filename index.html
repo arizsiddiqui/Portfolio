@@ -4,29 +4,17 @@
     <title>Ariz Siddiqui</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#777777" />
+    <meta name="theme-color" content="#777" />
     <meta property="og:image" content="./imgs/photo1.webp" />
-    <meta property="og:url" content="https://arizsiddiqui.tech/" />
+    <meta property="og:url" content="https://arizsiddiqui.me/" />
     <meta property="og:title" content="Ariz Siddiqui" />
     <meta
       name="description"
       content="All information about Ariz Siddiqui, an aspiring ML Developer from SRM IST."
     />
-    <link rel="shortcut icon" type="image/x-icon" href="./imgs/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="./imgs/MyLogo.ico" />
     <link rel="stylesheet" href="./stylesheets/style1.css" />
     <link rel="stylesheet" href="./stylesheets/lato.css" />
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-6M4HFFCJQV"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-6M4HFFCJQV");
-    </script>
     <link rel="stylesheet" href="./stylesheets/IndexStyle.css" />
     <link
       rel="stylesheet"
@@ -63,26 +51,30 @@
           <a
             href="javascript:void(0);"
             onclick="topFunction()"
-            class="bar-item button large padding-large"
+            class="bar-item button large padding-large hover disabled"
+            id="home-btn"
             >HOME</a
           >
           <a
             href="javascript:void(0);"
             onclick="scrollFunction()"
-            class="bar-item button large hide-small padding-large"
+            class="bar-item button large hide-small padding-large hover"
+            id="about-btn"
             >ABOUT</a
           >
           <a
             href="javascript:void(0);"
             onclick="scrollFunction1()"
-            class="bar-item button large hide-small padding-large"
+            class="bar-item button large hide-small padding-large hover"
+            id="portfolio-btn"
           >
             PORTFOLIO</a
           >
           <a
             href="javascript:void(0);"
             onclick="scrollFunction2()"
-            class="bar-item button large hide-small padding-large"
+            class="bar-item button large hide-small padding-large hover"
+            id="contact-btn"
             >CONTACT</a
           >
         </div>
@@ -111,9 +103,14 @@
 
       <div class="bgimg-1 display-container opacity-min" id="home">
         <div class="display-middle" style="white-space: nowrap">
-          <span class="center padding-large animate-opacity"
-            ><img src="./imgs/MyLogo.webp" alt="my logo" loading="lazy"
-          /></span>
+          <span class="center padding-large animate-opacity">
+            <img
+              src="./imgs/MyLogo.svg"
+              class="logo"
+              alt="my logo"
+              loading="lazy"
+            />
+          </span>
         </div>
         <a href="javascript:void(0);" onclick="scrollFunction()">
           <div class="scroll-down-dude"></div>
@@ -139,20 +136,21 @@
               Hi! My name is Mohd Ariz Siddiqui. I am a final year student in
               the department of Computer Science and Engineering at SRM
               Institute of Science and Technology, Kattankulathur, Tamil Nadu. I
-              am also a Diploma level student in the Programming and Data Science
-              program at Indian Institute of Technology, Madras (IITM), Chennai.
-              I am currently based out of New Delhi but available for work anywhere.
-              I have interned at NVIDIA Inc. as an ML Intern. I aspire 
-              to become a machine learning and artificial intelligence expert and use
-              my skills to make the world a better place. I love learning new
-              technologies, frameworks and tools that not only enhance my skill
-              set, but also provide me with an insight into various facets of
-              programming and software engineering. Not just technology though,
-              I am equally keen to learn any kind of new facts and am curious
-              about all the workings of our natural world. Apart from technology
-              and learning, I'm highly interested in music (rock music, AC/DC
-              has been my all-time favourite), gaming (the Halo series has been
-              quite influential for me) and football.
+              am also a Diploma level student in the Programming and Data
+              Science program at Indian Institute of Technology, Madras (IITM),
+              Chennai, where I have completed a Diploma in Data Science. I am
+              currently based out of New Delhi but available for work anywhere.
+              I have interned at NVIDIA Corporation as an ML Intern. I aspire to
+              become a machine learning and artificial intelligence expert and
+              use my skills to make the world a better place. I love learning
+              new technologies, frameworks and tools that not only enhance my
+              skill set, but also provide me with an insight into various facets
+              of programming and software engineering. Not just technology
+              though, I am equally keen to learn any kind of new facts and am
+              curious about all the workings of our natural world. Apart from
+              technology and learning, I'm highly interested in music (rock
+              music, AC/DC has been my all-time favourite), gaming (the Halo
+              series has been quite influential for me) and football.
             </p>
           </div>
         </div>
@@ -167,7 +165,7 @@
         </p>
       </div>
 
-      <div class="bgimg-2 lazy display-container opacity-min">
+      <div class="bgimg-2 display-container opacity-min">
         <div class="display-middle">
           <span class="xxlarge text-white wide">PORTFOLIO</span>
         </div>
@@ -186,7 +184,7 @@
         <div class="row-padding center section">
           <p class="xxxlarge">Projects</p>
         </div>
-        <div class="row-padding center">
+        <div class="row-padding center section">
           <div class="col m3">
             <img
               src="./imgs/clik.png"
@@ -198,7 +196,7 @@
             <a href="https://github.com/MLSA-SRM/Python-CLIK"
               ><i class="fab fa-github text-black xxlarge padding"></i
             ></a>
-            <i class="fab fa-python xxlarge text-lapis"></i>
+            <i class="fab fa-python xxlarge text-lapis padding"></i>
           </div>
 
           <div class="col m3">
@@ -210,7 +208,7 @@
             />
             <p class="xlarge">Lexicon</p>
             <a href="https://github.com/MLSA-SRM/Lexicon-The-Auto-Tagger"
-              ><i class="fab fa-github text-black xxlarge padding"></i
+              ><i class="fab fa-github text-black xxlarge"></i
             ></a>
             <a
               href="http://https://microsoftedge.microsoft.com/addons/detail/lexicon/bppdjidlkfinpadjbmgjlfgklojbblen"
@@ -221,17 +219,16 @@
 
           <div class="col m3">
             <img
-              src="./imgs/MyLogo.webp"
+              src="./imgs/MyLogo-dark.svg"
               loading="lazy"
-              style="width: 54.3%"
-              class="black"
+              style="width: 65%"
               alt="Website's Logo"
             />
             <p class="xlarge">Portfolio</p>
             <a href="https://github.com/arizsiddiqui/Portfolio"
               ><i class="fab fa-github text-black xxlarge padding-small"></i
             ></a>
-            <i class="fab fa-html5 xxlarge text-deep-orange padding-small"></i>
+            <i class="fab fa-html5 xxlarge text-deep-orange"></i>
             <i class="fab fa-css3-alt xxlarge text-black padding"></i>
             <i class="fab fa-js-square xxlarge text-yellow"></i>
           </div>
@@ -245,6 +242,104 @@
             />
             <p class="xlarge">Landmarks</p>
             <i class="fab fa-swift xxlarge text-deep-orange padding"></i>
+          </div>
+        </div>
+        <div class="row-padding center section">
+          <div class="col m3">
+            <img
+              src="./imgs/OnscreenWriter.svg"
+              loading="lazy"
+              style="width: 65%"
+              alt="OnscreenWriter Logo"
+            />
+            <p class="xlarge">Onscreen Writer</p>
+            <i class="fab fa-swift xxlarge text-deep-orange padding"></i>
+          </div>
+          <div class="col m3">
+            <img
+              src="./imgs/notebook.png"
+              loading="lazy"
+              style="width: 50%"
+              alt="Jupyter Notebook Logo"
+            />
+            <p class="xlarge padding-small">Boston House Price Prediction</p>
+            <i class="fab fa-python xxlarge text-lapis"></i>
+            <a
+              href="https://www.kaggle.com/code/arizsiddiqui/predicting-boston-house-prices"
+              ><i class="fab fa-kaggle xxlarge text-aqua padding"></i
+            ></a>
+          </div>
+          <div class="col m3">
+            <img
+              src="./imgs/notebook.png"
+              loading="lazy"
+              style="width: 50%"
+              alt="Jupyter Notebook Logo"
+            />
+            <p class="xlarge padding-small">Student Enrolment Prediction</p>
+            <i class="fab fa-python xxlarge text-lapis padding"></i>
+            <a
+              href="https://www.kaggle.com/code/arizsiddiqui/student-enrolment-prediction"
+              ><i class="fab fa-kaggle xxlarge text-aqua padding"></i
+            ></a>
+          </div>
+          <div class="col m3">
+            <img
+              src="./imgs/notebook.png"
+              loading="lazy"
+              style="width: 50%"
+              alt="Jupyter Notebook Logo"
+            />
+            <p class="xlarge padding-small">Introduction to DeepStream SDK</p>
+            <i class="fab fa-python xxlarge text-lapis padding"></i>
+            <a
+              href="https://arizsiddiqui.medium.com/integrating-tao-pre-trained-models-in-deepstream-bc42fc80205c"
+              ><i class="fa fa-newspaper xxlarge text-black padding"></i
+            ></a>
+          </div>
+        </div>
+        <div class="row-padding center section">
+          <div class="col m3">
+            <img
+              src="./imgs/notebook.png"
+              loading="lazy"
+              style="width: 50%"
+              alt="Jupyter Notebook Logo"
+            />
+            <p class="xlarge">Introduction to Riva SDK</p>
+            <i class="fab fa-python xxlarge text-lapis padding"></i>
+            <a
+              href="https://medium.com/@arizsiddiqui/getting-started-with-conversational-ai-applications-using-nvidia-riva-f55b96f3ae54"
+              ><i class="fa fa-newspaper xxlarge text-black padding"></i
+            ></a>
+          </div>
+          <div class="col m3">
+            <img
+              src="./imgs/notebook.png"
+              loading="lazy"
+              style="width: 50%"
+              alt="Jupyter Notebook Logo"
+            />
+            <p class="xlarge padding-small">Introduction to NeMo Toolkit</p>
+            <i class="fab fa-python xxlarge text-lapis"></i>
+            <a
+              href="https://medium.com/@arizsiddiqui/building-powerful-conversational-ai-models-with-nvidia-nemo-ce63243284d2"
+              ><i class="fa fa-newspaper xxlarge text-black padding"></i
+            ></a>
+          </div>
+          <div class="col m3">
+            <img
+              src="./imgs/notebook.png"
+              loading="lazy"
+              style="width: 50%"
+              alt="Jupyter Notebook Logo"
+            />
+            <p class="xlarge padding-small">Introduction to Clara SDK</p>
+            <i class="fab fa-python xxlarge text-lapis padding"></i>
+            <a
+              href="https://hub.docker.com/repository/docker/arizsiddiqui/clara_demo"
+              ><i class="fab fa-docker xxlarge text-blue padding"></i
+            ></a>
           </div>
         </div>
 
@@ -291,8 +386,6 @@
             />
             <p class="xlarge">C</p>
           </div>
-
-          
         </div>
         <div class="row-padding center section">
           <div class="col m3">
@@ -335,9 +428,9 @@
             <p class="xlarge">Node.js</p>
           </div>
         </div>
-        
-        <div class="row-padding center section hide-small">
-        <div class="col m3">
+
+        <div class="row-padding center section">
+          <div class="col m3">
             <img
               src="./imgs/azure.svg"
               loading="lazy"
@@ -359,12 +452,12 @@
 
           <div class="col m3">
             <img
-              src="./imgs/sql.svg"
+              src="./imgs/mysql.svg"
               loading="lazy"
-              style="width: 33.5%"
-              alt="SQL Logo"
+              style="width: 63%"
+              alt="MySQL Logo"
             />
-            <p class="xlarge">SQL</p>
+            <p class="xlarge">MySQL</p>
           </div>
 
           <div class="col m3">
@@ -378,18 +471,46 @@
           </div>
         </div>
         <div class="row-padding center section">
-          <a class="third" href="javascript:void(0);">&nbsp;</a
-          ><a
-            href="./resume.pdf"
-            class="button grey third padding block hover-black"
-            download="resume.pdf"
-            ><i class="fa fa-file-alt large padding-small"></i> DOWNLOAD
-            RESUME</a
-          >
+          <div class="col m3">
+            <img
+              src="./imgs/java.svg"
+              loading="lazy"
+              style="width: 33.5%"
+              alt="Java Logo"
+            />
+            <p class="xlarge">Java</p>
+          </div>
+          <div class="col m3">
+            <img
+              src="./imgs/bash.svg"
+              loading="lazy"
+              style="width: 33.5%"
+              alt="Bash Logo"
+            />
+            <p class="xlarge">Bash</p>
+          </div>
+          <div class="col m3">
+            <img
+              src="./imgs/docker.png"
+              loading="lazy"
+              style="width: 47%"
+              alt="Docker logo"
+            />
+            <p class="xlarge">Docker</p>
+          </div>
+          <div class="col m3">
+            <img
+              src="./imgs/oracle.svg"
+              loading="lazy"
+              style="width: 65%"
+              alt="Oracle logo"
+            />
+            <p class="xlarge">Oracle</p>
+          </div>
         </div>
       </div>
 
-      <div class="bgimg-3 lazy display-container opacity-min">
+      <div class="bgimg-3 display-container opacity-min">
         <div class="display-middle">
           <span class="xxlarge text-white wide">CONTACT</span>
         </div>
@@ -423,10 +544,6 @@
                 class="fas fa-map-marker fa-fw hover-text-black xlarge margin-right"
               ></i>
               SRM IST, Tamil Nadu, India<br />
-              <i
-                class="fas fa-phone fa-fw hover-text-black xlarge margin-right"
-              ></i>
-              Phone: +91 8860896000<br />
               <i
                 class="fas fa-envelope fa-fw hover-text-black xlarge margin-right"
               ></i>
@@ -604,24 +721,76 @@
           document
             .getElementById("about")
             .scrollIntoView({ behavior: "smooth" });
+          var array = ["home-btn", "about-btn", "portfolio-btn", "contact-btn"];
+          if (
+            document.getElementById("home").className.indexOf("hover" != -1)
+          ) {
+            for (let i = 0; i < array.length; i++) {
+              var x = document.getElementById(array[i]);
+              x.className = x.className.replace(" hover", "");
+              if (x.className.indexOf(" disabled") != -1) {
+                x.className = x.className.replace(" disabled", "");
+              }
+            }
+          }
+          var x = document.getElementById("about-btn");
+          x.className += " disabled";
         }
 
         function scrollFunction1() {
           document
             .getElementById("portfolio")
             .scrollIntoView({ behavior: "smooth" });
+          var array = ["home-btn", "about-btn", "portfolio-btn", "contact-btn"];
+          if (
+            document.getElementById("home").className.indexOf("hover" != -1)
+          ) {
+            for (let i = 0; i < array.length; i++) {
+              var x = document.getElementById(array[i]);
+              x.className = x.className.replace(" hover", "");
+              if (x.className.indexOf(" disabled") != -1) {
+                x.className = x.className.replace(" disabled", "");
+              }
+            }
+          }
+          var x = document.getElementById("portfolio-btn");
+          x.className += " disabled";
         }
 
         function scrollFunction2() {
           document
             .getElementById("contact")
             .scrollIntoView({ behavior: "smooth" });
+          var array = ["home-btn", "about-btn", "portfolio-btn", "contact-btn"];
+          if (
+            document.getElementById("home").className.indexOf("hover" != -1)
+          ) {
+            for (let i = 0; i < array.length; i++) {
+              var x = document.getElementById(array[i]);
+              x.className = x.className.replace(" hover", "");
+              if (x.className.indexOf(" disabled") != -1) {
+                x.className = x.className.replace(" disabled", "");
+              }
+            }
+          }
+          var x = document.getElementById("contact-btn");
+          x.className += " disabled";
         }
 
         function topFunction() {
           document
             .getElementById("home")
             .scrollIntoView({ behavior: "smooth" });
+          var array = ["home-btn", "about-btn", "portfolio-btn", "contact-btn"];
+          for (let i = 0; i < array.length; i++) {
+            var x = document.getElementById(array[i]);
+            x.className += " hover";
+            if (x.className.indexOf(" disabled") != -1) {
+              x.className = x.className.replace(" disabled", "");
+            }
+          }
+          var x = document.getElementById("home-btn");
+          x.className += " disabled";
         }
 
         function toggleFunction() {
@@ -636,10 +805,12 @@
       <script
         src="https://kit.fontawesome.com/f4468ff4ca.js"
         crossorigin="anonymous"
+        defer
       ></script>
       <script
         src="https://s.pageclip.co/v1/pageclip.js"
         charset="utf-8"
+        defer
       ></script>
     </body>
   </head>

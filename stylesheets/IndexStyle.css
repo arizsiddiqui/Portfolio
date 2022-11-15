@@ -25,7 +25,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../imgs/IMG_7307.webp);
+  background-image: url(../imgs/Photo3.webp);
   min-height: 100%;
 }
 
@@ -41,12 +41,22 @@ html {
   cursor: pointer;
 }
 
-@media only screen and (max-device-width: 1600 px) {
+@media only screen and (max-device-width: 1600px) {
   .bgimg {
     background-attachment: scroll;
     min-height: 400px;
   }
 }
+
+.logo {
+  height: 17em;
+}
+@media (max-width: 800px) {
+  .logo {
+      height: 10em;
+    }
+}
+
 
 .scroll-down-dude {
   position: absolute;
@@ -135,3 +145,9 @@ html {
     opacity: 1;
   }
 }
+
+.hover {
+  border-radius: 5px;
+}
+
+

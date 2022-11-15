@@ -1442,9 +1442,9 @@ a {
 .hover-text-teal:hover {
   color: #009688 !important;
 }
-.text-yellow,
+.text-yellow, 
 .hover-text-yellow:hover {
-  color: #d2be0e !important;
+  color: #f8d848 !important;
 }
 .text-white,
 .hover-text-white:hover {
