@@ -45,6 +45,7 @@ html {
   .bgimg {
     background-attachment: scroll;
     max-height: 400px;
+    background-size: contain;
   }
 }
 
