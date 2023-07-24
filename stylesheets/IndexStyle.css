@@ -10,7 +10,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../imgs/Photo1.webp);
-  min-height: 100%;
+  min-height: 100vh;
 }
 .bgimg-2 {
   background-attachment: fixed;
@@ -18,7 +18,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../imgs/Photo2.webp);
-  min-height: 100%;
+  min-height: 100vh;
 }
 .bgimg-3 {
   background-attachment: fixed;
@@ -26,7 +26,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../imgs/Photo3.webp);
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 .lazy {
@@ -149,5 +149,3 @@ html {
 .hover {
   border-radius: 5px;
 }
-
-
