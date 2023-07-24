@@ -44,8 +44,7 @@ html {
 @media only screen and (max-width: 800px) {
   .bgimg {
     background-attachment: scroll;
-    max-height: 400px;
-    background-size: contain;
+    background-size: cover;
   }
 }
 
