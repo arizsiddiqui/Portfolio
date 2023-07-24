@@ -42,9 +42,20 @@ html {
 }
 
 @media only screen and (max-width: 800px) {
-  .bgimg {
+  .bgimg-1 {
     background-attachment: scroll;
     background-size: cover;
+    max-height: fit-content;
+  }
+  .bgimg-2 {
+    background-attachment: scroll;
+    background-size: cover;
+    max-height: fit-content;
+  }
+  .bgimg-3 {
+    background-attachment: scroll;
+    background-size: cover;
+    max-height: fit-content;
   }
 }
 
