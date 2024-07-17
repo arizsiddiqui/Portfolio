@@ -1,557 +1,650 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Ariz Siddiqui</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#777" />
-    <meta property="og:image" content="https://arizsiddiqui.in/imgs/MyLogo-dark.svg" />
-    <meta property="og:url" content="https://arizsiddiqui.in/" />
-    <meta property="og:title" content="Ariz Siddiqui" />
-    <meta
-      name="description"
-      content="All about Ariz Siddiqui, an aspiring ML Developer from The University of Texas at Dallas."
-    />
-    <link rel="shortcut icon" type="image/x-icon" href="./imgs/MyLogo.ico" />
-    <link rel="stylesheet" href="./stylesheets/style1.css" />
-    <link rel="stylesheet" href="./stylesheets/lato.css" />
-    <link rel="stylesheet" href="./stylesheets/IndexStyle.css" />
-    <link
-      rel="stylesheet"
-      href="https://s.pageclip.co/v1/pageclip.css"
-      media="screen"
-    />
-    <style>
-      body,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: "Lato", sans-serif;
-      }
-      body,
-      html {
-        height: 100%;
-        color: #777;
-        line-height: 1.8;
-      }
-    </style>
-    <body>
-      <div class="top">
-        <div class="bar" id="myNavbar">
-          <a
-            class="bar-item button hide-medium hide-large right"
-            href="javascript:void(0);"
-            onclick="toggleFunction()"
-          >
-            <i class="fas fa-bars"></i>
-          </a>
-          <a
-            href="javascript:void(0);"
-            onclick="topFunction()"
-            class="bar-item button large padding-large hover disabled"
-            id="home-btn"
-            >HOME</a
-          >
-          <a
-            href="javascript:void(0);"
-            onclick="scrollFunction()"
-            class="bar-item button large hide-small padding-large hover"
-            id="about-btn"
-            >ABOUT</a
-          >
-          <a
-            href="javascript:void(0);"
-            onclick="scrollFunction1()"
-            class="bar-item button large hide-small padding-large hover"
-            id="portfolio-btn"
-          >
-            PORTFOLIO</a
-          >
-          <a
-            href="javascript:void(0);"
-            onclick="scrollFunction2()"
-            class="bar-item button large hide-small padding-large hover"
-            id="contact-btn"
-            >CONTACT</a
-          >
-        </div>
+	<head>
+		<title>Ariz Siddiqui</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#777" />
+		<meta
+			name="description"
+			content="All about Ariz Siddiqui, an aspiring ML Developer from The University of Texas at Dallas."
+		/>
 
-        <div id="smallNav" class="bar-block black hide hide-large hide-medium">
-          <a
-            href="javascript:void(0);"
-            class="bar-item button"
-            onclick="scrollFunction();toggleFunction()"
-            >ABOUT</a
-          >
-          <a
-            href="javascript:void(0);"
-            class="bar-item button"
-            onclick="scrollFunction1();toggleFunction()"
-            >PORTFOLIO</a
-          >
-          <a
-            href="javascript:void(0);"
-            class="bar-item button"
-            onclick="scrollFunction2();toggleFunction()"
-            >CONTACT</a
-          >
-        </div>
-      </div>
+		<meta property="og:url" content="https://arizsiddiqui.in" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Ariz Siddiqui" />
+		<meta
+			property="og:description"
+			content="All about Ariz Siddiqui, an aspiring ML Developer from The University of Texas at Dallas."
+		/>
+		<meta
+			property="og:image"
+			content="https://arizsiddiqui.in/imgs/MyLogo-dark.svg"
+		/>
 
-      <div class="bgimg-1 display-container opacity-min" id="home">
-        <div class="display-middle" style="white-space: nowrap">
-          <span class="center padding-large animate-opacity">
-            <img
-              src="./imgs/MyLogo.svg"
-              class="logo"
-              alt="my logo"
-              loading="lazy"
-            />
-          </span>
-        </div>
-        <a href="javascript:void(0);" onclick="scrollFunction()">
-          <div class="scroll-down-dude"></div>
-        </a>
-      </div>
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta property="twitter:domain" content="arizsiddiqui.in" />
+		<meta property="twitter:url" content="https://arizsiddiqui.in" />
+		<meta name="twitter:title" content="Ariz Siddiqui" />
+		<meta
+			name="twitter:description"
+			content="All about Ariz Siddiqui, an aspiring ML Developer from The University of Texas at Dallas."
+		/>
+		<meta
+			name="twitter:image"
+			content="https://arizsiddiqui.in/imgs/MyLogo-dark.svg"
+		/>
+		<link rel="shortcut icon" type="image/x-icon" href="./imgs/MyLogo.ico" />
+		<link rel="stylesheet" href="./stylesheets/style1.css" />
+		<link rel="stylesheet" href="./stylesheets/lato.css" />
+		<link rel="stylesheet" href="./stylesheets/IndexStyle.css" />
+		<style>
+			body,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				font-family: "Lato", sans-serif;
+			}
+			body,
+			html {
+				height: 100%;
+				color: #777;
+				line-height: 1.8;
+			}
 
-      <div class="content container padding-64" id="about">
-        <h3 class="center">ABOUT ME</h3>
-        <p class="center"><em>Aspiring ML Developer</em></p>
-        <div class="row">
-          <div class="col m6 center padding-32">
-            <img
-              src="./imgs/MyPhoto.webp"
-              class="round-large image"
-              loading="lazy"
-              alt="Photo of Me"
-              width="80%"
-            />
-          </div>
+			.info-box {
+				padding: 20px;
+				height: 100vh;
+				width: 100vw;
+				left: 0;
+				top: 0;
+				background-color: #fffafa;
+				color: #222222;
+				z-index: 2;
+				position: fixed;
+				opacity: 0.9;
+				overflow-x: hidden;
+				overflow-y: hidden;
+			}
 
-          <div class="col m6 padding-large">
-            <p>
-              Hi! My name is Mohd Ariz Siddiqui. I am a graduate student of Computer Science
-              at The University of Texas at Dallas. I
-              am also a Degree level student in the Programming and Data
-              Science program at Indian Institute of Technology, Madras (IITM),
-              Chennai, where I have completed a Diploma in Data Science and Programming. I am
-              currently based out of Richardson, TX but available for work anywhere.
-              I have interned at Gahan AI (in collaboration with NVIDIA
-              Corporation) as an ML Intern as well as Techjockey.com as a software apprentice.
-              I aspire to become a machine learning and artificial intelligence
-              expert and use my skills to make the world a better place.
-              I love learning new technologies, frameworks and tools that not
-              only enhance my skill set, but also provide me with an insight
-              into various facets of programming and software engineering. Not
-              just technology though, I am equally keen to learn any kind of new facts
-              and am curious about all the workings of our natural world. Apart from 
-              technology and learning, I'm highly interested in music (rock/funk music, Red Hot Chili Peppers
-              has been my all-time favourite), gaming (the Halo series has been quite
-              influential for me) and football.
-            </p>
-          </div>
-        </div>
-        <p class="hide-small">
-          I have been working on a lot of project these days, but I am still
-          looking for internships and freelancing internships in the fields of
-          Supervised Learning (regressors, classifiers, with knowledge of Linear
-          Regressors, Decision Trees, Random Forests, Naïve Bayes and XGBoost)
-          and Neural Networks (specifically RNNs and CNNs using the Keras
-          library).
-        </p>
-      </div>
+			.transition-opac {
+				animation: opaci 0.5s;
+			}
+			@keyframes opaci {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 0.9;
+				}
+			}
 
-      <div class="bgimg-2 display-container opacity-min">
-        <div class="display-middle">
-          <span class="xxlarge text-white wide">PORTFOLIO</span>
-        </div>
-      </div>
+			.overlay-logo {
+				position: relative;
+				top: 25%;
+				background-image: url("./imgs/MyLogo-dark.svg");
+				background-size: 100%;
+				background-repeat: no-repeat;
+				height: 25rem;
+				width: 25rem;
+				margin-left: 15%;
+			}
 
-      <div class="content container padding-64" id="portfolio">
-        <h3 class="center">Skills & Projects</h3>
-        <p class="center">
-          <em
-            >A list of all projects completed and skills acquired. <br />
-            Many more on the way!</em
-          >
-        </p>
-        <br />
+			.overlay-content {
+				position: relative;
+				top: -5%;
+				left: 50%;
+				font-size: 1.5rem;
+				width: 40%;
+			}
 
-        <div class="row-padding center section">
-          <p class="xxxlarge">Projects</p>
-        </div>
-        <div class="row-padding center section">
-          <div class="col m3">
-            <img
-              src="./imgs/clik.png"
-              loading="lazy"
-              style="width: 91%"
-              alt="CLIK Logo"
-            />
-            <p class="xlarge">Python - CLIK</p>
-            <a href="https://github.com/MLSA-SRM/Python-CLIK"
-              ><i class="fab fa-github text-black xxlarge padding"></i
-            ></a>
-            <i class="fab fa-python xxlarge text-lapis padding"></i>
-          </div>
+			.closebtn {
+				margin-left: 15px;
+				color: #222222;
+				font-weight: bold;
+				float: right;
+				font-size: 70px;
+				line-height: 20px;
+				cursor: pointer;
+				transition: opacity 0.5s;
+			}
 
-          <div class="col m3">
-            <img
-              src="./imgs/lxcn.png"
-              loading="lazy"
-              style="width: 65%"
-              alt="Lexicon Logo"
-            />
-            <p class="xlarge">Lexicon</p>
-            <a href="https://github.com/MLSA-SRM/Lexicon-The-Auto-Tagger"
-              ><i class="fab fa-github text-black xxlarge"></i
-            ></a>
-            <a
-              href="http://https://microsoftedge.microsoft.com/addons/detail/lexicon/bppdjidlkfinpadjbmgjlfgklojbblen"
-              ><i class="fas fa-globe text-black xxlarge padding"></i
-            ></a>
-            <i class="fab fa-python xxlarge text-lapis"></i>
-          </div>
+			.closebtn:hover {
+				color: black;
+			}
+		</style>
+		<body>
+			<div class="info-box transition-opac">
+				<span
+					class="closebtn"
+					onclick="this.parentElement.style.display='none';"
+				>
+					&times;
+				</span>
+				<div class="overlay-logo"></div>
+				<div class="overlay-content">
+					This website is currently undergoing a major revamp. Stay tuned for
+					more changes!
+				</div>
+			</div>
+			<div class="top">
+				<div class="bar" id="myNavbar">
+					<a
+						class="bar-item button hide-medium hide-large right"
+						href="javascript:void(0);"
+						onclick="toggleFunction()"
+					>
+						<i class="fas fa-bars"></i>
+					</a>
+					<a
+						href="javascript:void(0);"
+						onclick="topFunction()"
+						class="bar-item button large padding-large hover disabled"
+						id="home-btn"
+						>HOME</a
+					>
+					<a
+						href="javascript:void(0);"
+						onclick="scrollFunction()"
+						class="bar-item button large hide-small padding-large hover"
+						id="about-btn"
+						>ABOUT</a
+					>
+					<a
+						href="javascript:void(0);"
+						onclick="scrollFunction1()"
+						class="bar-item button large hide-small padding-large hover"
+						id="portfolio-btn"
+					>
+						PORTFOLIO</a
+					>
+					<a
+						href="javascript:void(0);"
+						onclick="scrollFunction2()"
+						class="bar-item button large hide-small padding-large hover"
+						id="contact-btn"
+						>CONTACT</a
+					>
+				</div>
 
-          <div class="col m3">
-            <img
-              src="./imgs/MyLogo-dark.svg"
-              loading="lazy"
-              style="width: 65%"
-              alt="Website's Logo"
-            />
-            <p class="xlarge">Portfolio</p>
-            <a href="https://github.com/arizsiddiqui/Portfolio"
-              ><i class="fab fa-github text-black xxlarge padding-small"></i
-            ></a>
-            <i class="fab fa-html5 xxlarge text-deep-orange"></i>
-            <i class="fab fa-css3-alt xxlarge text-black padding"></i>
-            <i class="fab fa-js-square xxlarge text-yellow"></i>
-          </div>
+				<div id="smallNav" class="bar-block black hide hide-large hide-medium">
+					<a
+						href="javascript:void(0);"
+						class="bar-item button"
+						onclick="scrollFunction();toggleFunction()"
+						>ABOUT</a
+					>
+					<a
+						href="javascript:void(0);"
+						class="bar-item button"
+						onclick="scrollFunction1();toggleFunction()"
+						>PORTFOLIO</a
+					>
+					<a
+						href="javascript:void(0);"
+						class="bar-item button"
+						onclick="scrollFunction2();toggleFunction()"
+						>CONTACT</a
+					>
+				</div>
+			</div>
 
-          <div class="col m3">
-            <img
-              src="./imgs/landmarks.png"
-              loading="lazy"
-              style="width: 65%"
-              alt="Landmarks Logo"
-            />
-            <p class="xlarge">Landmarks</p>
-            <i class="fab fa-swift xxlarge text-deep-orange padding"></i>
-          </div>
-        </div>
-        <div class="row-padding center section">
-          <div class="col m3">
-            <img
-              src="./imgs/OnscreenWriter.svg"
-              loading="lazy"
-              style="width: 65%"
-              alt="OnscreenWriter Logo"
-            />
-            <p class="xlarge">Onscreen Writer</p>
-            <i class="fab fa-swift xxlarge text-deep-orange padding"></i>
-          </div>
-          <div class="col m3">
-            <img
-              src="./imgs/notebook.png"
-              loading="lazy"
-              style="width: 50%"
-              alt="Jupyter Notebook Logo"
-            />
-            <p class="xlarge padding-small">Boston House Price Prediction</p>
-            <i class="fab fa-python xxlarge text-lapis"></i>
-            <a
-              href="https://www.kaggle.com/code/arizsiddiqui/predicting-boston-house-prices"
-              ><i class="fab fa-kaggle xxlarge text-aqua padding"></i
-            ></a>
-          </div>
-          <div class="col m3">
-            <img
-              src="./imgs/notebook.png"
-              loading="lazy"
-              style="width: 50%"
-              alt="Jupyter Notebook Logo"
-            />
-            <p class="xlarge padding-small">Student Enrolment Prediction</p>
-            <i class="fab fa-python xxlarge text-lapis padding"></i>
-            <a
-              href="https://www.kaggle.com/code/arizsiddiqui/student-enrolment-prediction"
-              ><i class="fab fa-kaggle xxlarge text-aqua padding"></i
-            ></a>
-          </div>
-          <div class="col m3">
-            <img
-              src="./imgs/notebook.png"
-              loading="lazy"
-              style="width: 50%"
-              alt="Jupyter Notebook Logo"
-            />
-            <p class="xlarge padding-small">Introduction to DeepStream SDK</p>
-            <i class="fab fa-python xxlarge text-lapis padding"></i>
-            <a
-              href="https://arizsiddiqui.medium.com/integrating-tao-pre-trained-models-in-deepstream-bc42fc80205c"
-              ><i class="fa fa-newspaper xxlarge text-black padding"></i
-            ></a>
-          </div>
-        </div>
-        <div class="row-padding center section">
-          <div class="col m3">
-            <img
-              src="./imgs/notebook.png"
-              loading="lazy"
-              style="width: 50%"
-              alt="Jupyter Notebook Logo"
-            />
-            <p class="xlarge">Introduction to Riva SDK</p>
-            <i class="fab fa-python xxlarge text-lapis padding"></i>
-            <a
-              href="https://medium.com/@arizsiddiqui/getting-started-with-conversational-ai-applications-using-nvidia-riva-f55b96f3ae54"
-              ><i class="fa fa-newspaper xxlarge text-black padding"></i
-            ></a>
-          </div>
-          <div class="col m3">
-            <img
-              src="./imgs/notebook.png"
-              loading="lazy"
-              style="width: 50%"
-              alt="Jupyter Notebook Logo"
-            />
-            <p class="xlarge padding-small">Introduction to NeMo Toolkit</p>
-            <i class="fab fa-python xxlarge text-lapis"></i>
-            <a
-              href="https://medium.com/@arizsiddiqui/building-powerful-conversational-ai-models-with-nvidia-nemo-ce63243284d2"
-              ><i class="fa fa-newspaper xxlarge text-black padding"></i
-            ></a>
-          </div>
-          <div class="col m3">
-            <img
-              src="./imgs/notebook.png"
-              loading="lazy"
-              style="width: 50%"
-              alt="Jupyter Notebook Logo"
-            />
-            <p class="xlarge padding-small">Introduction to Clara SDK</p>
-            <i class="fab fa-python xxlarge text-lapis padding"></i>
-            <a
-              href="https://hub.docker.com/repository/docker/arizsiddiqui/clara_demo"
-              ><i class="fab fa-docker xxlarge text-blue padding"></i
-            ></a>
-          </div>
-        </div>
+			<div class="bgimg-1 display-container opacity-min" id="home">
+				<div class="display-middle" style="white-space: nowrap">
+					<span class="center padding-large animate-opacity">
+						<img
+							src="./imgs/MyLogo.svg"
+							class="logo"
+							alt="my logo"
+							loading="lazy"
+						/>
+					</span>
+				</div>
+				<a href="javascript:void(0);" onclick="scrollFunction()">
+					<div class="scroll-down-dude"></div>
+				</a>
+			</div>
 
-        <div class="row-padding center section">
-          <p class="xxxlarge">Skills</p>
-        </div>
+			<div class="content container padding-64" id="about">
+				<h3 class="center">ABOUT ME</h3>
+				<p class="center"><em>Aspiring ML Developer</em></p>
+				<div class="row">
+					<div class="col m6 center padding-32">
+						<img
+							src="./imgs/MyPhoto.webp"
+							class="round-large image"
+							loading="lazy"
+							alt="Photo of Me"
+							width="80%"
+						/>
+					</div>
 
-        <div class="row-padding center section">
-          <div class="col m3">
-            <img
-              src="./imgs/python.png"
-              loading="lazy"
-              style="width: 33.5%"
-              alt="Pyhton Logo"
-            />
-            <p class="xlarge">Python</p>
-          </div>
+					<div class="col m6 padding-large">
+						<p>
+							Hi! My name is Mohd Ariz Siddiqui. I am a graduate student of
+							Computer Science at The University of Texas at Dallas. I am also a
+							Degree level student in the Programming and Data Science program
+							at Indian Institute of Technology, Madras (IITM), Chennai, where I
+							have completed a Diploma in Data Science and Programming. I am
+							currently based out of Richardson, TX but available for work
+							anywhere. I have interned at Gahan AI (in collaboration with
+							NVIDIA Corporation) as an ML Intern as well as Techjockey.com as a
+							software apprentice. I aspire to become a machine learning and
+							artificial intelligence expert and use my skills to make the world
+							a better place. I love learning new technologies, frameworks and
+							tools that not only enhance my skill set, but also provide me with
+							an insight into various facets of programming and software
+							engineering. Not just technology though, I am equally keen to
+							learn any kind of new facts and am curious about all the workings
+							of our natural world. Apart from technology and learning, I'm
+							highly interested in music (rock/funk music, Red Hot Chili Peppers
+							has been my all-time favourite), gaming (the Halo series has been
+							quite influential for me) and football.
+						</p>
+					</div>
+				</div>
+				<p class="hide-small">
+					I have been working on a lot of project these days, but I am still
+					looking for internships and freelancing internships in the fields of
+					Supervised Learning (regressors, classifiers, with knowledge of Linear
+					Regressors, Decision Trees, Random Forests, Naïve Bayes and XGBoost)
+					and Neural Networks (specifically RNNs and CNNs using the Keras
+					library).
+				</p>
+			</div>
 
-          <div class="col m3">
-            <img
-              src="./imgs/swift.svg"
-              loading="lazy"
-              style="width: 33.5%"
-              alt="Swift Logo"
-            />
-            <p class="xlarge">Swift</p>
-          </div>
+			<div class="bgimg-2 display-container opacity-min">
+				<div class="display-middle">
+					<span class="xxlarge text-white wide">PORTFOLIO</span>
+				</div>
+			</div>
 
-          <div class="col m3">
-            <img
-              src="./imgs/cpp.svg"
-              loading="lazy"
-              style="width: 30%"
-              alt="C++ Logo"
-            />
-            <p class="xlarge">C++</p>
-          </div>
-          <div class="col m3">
-            <img
-              src="./imgs/c.png"
-              loading="lazy"
-              style="width: 33.5%"
-              alt="C Logo"
-            />
-            <p class="xlarge">C</p>
-          </div>
-        </div>
-        <div class="row-padding center section">
-          <div class="col m3">
-            <img
-              src="./imgs/html5.png"
-              loading="lazy"
-              style="width: 33.5%"
-              alt="HTML Logo"
-            />
-            <p class="xlarge">HTML 5</p>
-          </div>
+			<div class="content container padding-64" id="portfolio">
+				<h3 class="center">Skills & Projects</h3>
+				<p class="center">
+					<em
+						>A list of all projects completed and skills acquired. <br />
+						Many more on the way!</em
+					>
+				</p>
+				<br />
 
-          <div class="col m3">
-            <img
-              src="./imgs/css3.png"
-              loading="lazy"
-              style="width: 33.5%"
-              alt="CSS Logo"
-            />
-            <p class="xlarge">CSS 3</p>
-          </div>
+				<div class="row-padding center section">
+					<p class="xxxlarge">Projects</p>
+				</div>
+				<div class="row-padding center section">
+					<div class="col m3">
+						<img
+							src="./imgs/clik.png"
+							loading="lazy"
+							style="width: 91%"
+							alt="CLIK Logo"
+						/>
+						<p class="xlarge">Python - CLIK</p>
+						<a href="https://github.com/MLSA-SRM/Python-CLIK"
+							><i class="fab fa-github text-black xxlarge padding"></i
+						></a>
+						<i class="fab fa-python xxlarge text-lapis padding"></i>
+					</div>
 
-          <div class="col m3">
-            <img
-              src="./imgs/javascript.png"
-              loading="lazy"
-              style="width: 33.5%"
-              alt="JavaScript Logo"
-            />
-            <p class="xlarge">JavaScript</p>
-          </div>
+					<div class="col m3">
+						<img
+							src="./imgs/lxcn.png"
+							loading="lazy"
+							style="width: 65%"
+							alt="Lexicon Logo"
+						/>
+						<p class="xlarge">Lexicon</p>
+						<a href="https://github.com/MLSA-SRM/Lexicon-The-Auto-Tagger"
+							><i class="fab fa-github text-black xxlarge"></i
+						></a>
+						<a
+							href="http://https://microsoftedge.microsoft.com/addons/detail/lexicon/bppdjidlkfinpadjbmgjlfgklojbblen"
+							><i class="fas fa-globe text-black xxlarge padding"></i
+						></a>
+						<i class="fab fa-python xxlarge text-lapis"></i>
+					</div>
 
-          <div class="col m3">
-            <img
-              src="./imgs/nodejs.png"
-              loading="lazy"
-              style="width: 33.5%"
-              alt="Node.js Logo"
-            />
-            <p class="xlarge">Node.js</p>
-          </div>
-        </div>
+					<div class="col m3">
+						<img
+							src="./imgs/MyLogo-dark.svg"
+							loading="lazy"
+							style="width: 65%"
+							alt="Website's Logo"
+						/>
+						<p class="xlarge">Portfolio</p>
+						<a href="https://github.com/arizsiddiqui/Portfolio"
+							><i class="fab fa-github text-black xxlarge padding-small"></i
+						></a>
+						<i class="fab fa-html5 xxlarge text-deep-orange"></i>
+						<i class="fab fa-css3-alt xxlarge text-black padding"></i>
+						<i class="fab fa-js-square xxlarge text-yellow"></i>
+					</div>
 
-        <div class="row-padding center section">
-          <div class="col m3">
-            <img
-              src="./imgs/azure.svg"
-              loading="lazy"
-              style="width: 33.5%"
-              alt="Azure Logo"
-            />
-            <p class="xlarge">Azure</p>
-          </div>
+					<div class="col m3">
+						<img
+							src="./imgs/landmarks.png"
+							loading="lazy"
+							style="width: 65%"
+							alt="Landmarks Logo"
+						/>
+						<p class="xlarge">Landmarks</p>
+						<i class="fab fa-swift xxlarge text-deep-orange padding"></i>
+					</div>
+				</div>
+				<div class="row-padding center section">
+					<div class="col m3">
+						<img
+							src="./imgs/OnscreenWriter.svg"
+							loading="lazy"
+							style="width: 65%"
+							alt="OnscreenWriter Logo"
+						/>
+						<p class="xlarge">Onscreen Writer</p>
+						<i class="fab fa-swift xxlarge text-deep-orange padding"></i>
+					</div>
+					<div class="col m3">
+						<img
+							src="./imgs/notebook.png"
+							loading="lazy"
+							style="width: 50%"
+							alt="Jupyter Notebook Logo"
+						/>
+						<p class="xlarge padding-small">Boston House Price Prediction</p>
+						<i class="fab fa-python xxlarge text-lapis"></i>
+						<a
+							href="https://www.kaggle.com/code/arizsiddiqui/predicting-boston-house-prices"
+							><i class="fab fa-kaggle xxlarge text-aqua padding"></i
+						></a>
+					</div>
+					<div class="col m3">
+						<img
+							src="./imgs/notebook.png"
+							loading="lazy"
+							style="width: 50%"
+							alt="Jupyter Notebook Logo"
+						/>
+						<p class="xlarge padding-small">Student Enrolment Prediction</p>
+						<i class="fab fa-python xxlarge text-lapis padding"></i>
+						<a
+							href="https://www.kaggle.com/code/arizsiddiqui/student-enrolment-prediction"
+							><i class="fab fa-kaggle xxlarge text-aqua padding"></i
+						></a>
+					</div>
+					<div class="col m3">
+						<img
+							src="./imgs/notebook.png"
+							loading="lazy"
+							style="width: 50%"
+							alt="Jupyter Notebook Logo"
+						/>
+						<p class="xlarge padding-small">Introduction to DeepStream SDK</p>
+						<i class="fab fa-python xxlarge text-lapis padding"></i>
+						<a
+							href="https://arizsiddiqui.medium.com/integrating-tao-pre-trained-models-in-deepstream-bc42fc80205c"
+							><i class="fa fa-newspaper xxlarge text-black padding"></i
+						></a>
+					</div>
+				</div>
+				<div class="row-padding center section">
+					<div class="col m3">
+						<img
+							src="./imgs/notebook.png"
+							loading="lazy"
+							style="width: 50%"
+							alt="Jupyter Notebook Logo"
+						/>
+						<p class="xlarge">Introduction to Riva SDK</p>
+						<i class="fab fa-python xxlarge text-lapis padding"></i>
+						<a
+							href="https://medium.com/@arizsiddiqui/getting-started-with-conversational-ai-applications-using-nvidia-riva-f55b96f3ae54"
+							><i class="fa fa-newspaper xxlarge text-black padding"></i
+						></a>
+					</div>
+					<div class="col m3">
+						<img
+							src="./imgs/notebook.png"
+							loading="lazy"
+							style="width: 50%"
+							alt="Jupyter Notebook Logo"
+						/>
+						<p class="xlarge padding-small">Introduction to NeMo Toolkit</p>
+						<i class="fab fa-python xxlarge text-lapis"></i>
+						<a
+							href="https://medium.com/@arizsiddiqui/building-powerful-conversational-ai-models-with-nvidia-nemo-ce63243284d2"
+							><i class="fa fa-newspaper xxlarge text-black padding"></i
+						></a>
+					</div>
+					<div class="col m3">
+						<img
+							src="./imgs/notebook.png"
+							loading="lazy"
+							style="width: 50%"
+							alt="Jupyter Notebook Logo"
+						/>
+						<p class="xlarge padding-small">Introduction to Clara SDK</p>
+						<i class="fab fa-python xxlarge text-lapis padding"></i>
+						<a
+							href="https://hub.docker.com/repository/docker/arizsiddiqui/clara_demo"
+							><i class="fab fa-docker xxlarge text-blue padding"></i
+						></a>
+					</div>
+				</div>
 
-          <div class="col m3">
-            <img
-              src="./imgs/git.png"
-              loading="lazy"
-              style="width: 33.5%"
-              alt="Git Logo"
-            />
-            <p class="xlarge">Git</p>
-          </div>
+				<div class="row-padding center section">
+					<p class="xxxlarge">Skills</p>
+				</div>
 
-          <div class="col m3">
-            <img
-              src="./imgs/mysql.svg"
-              loading="lazy"
-              style="width: 63%"
-              alt="MySQL Logo"
-            />
-            <p class="xlarge">MySQL</p>
-          </div>
+				<div class="row-padding center section">
+					<div class="col m3">
+						<img
+							src="./imgs/python.png"
+							loading="lazy"
+							style="width: 33.5%"
+							alt="Pyhton Logo"
+						/>
+						<p class="xlarge">Python</p>
+					</div>
 
-          <div class="col m3">
-            <img
-              src="./imgs/mongodb.svg"
-              loading="lazy"
-              style="width: 16.33%"
-              alt="MongoDB Logo"
-            />
-            <p class="xlarge">MongoDB</p>
-          </div>
-        </div>
-        <div class="row-padding center section">
-          <div class="col m3">
-            <img
-              src="./imgs/java.svg"
-              loading="lazy"
-              style="width: 33.5%"
-              alt="Java Logo"
-            />
-            <p class="xlarge">Java</p>
-          </div>
-          <div class="col m3">
-            <img
-              src="./imgs/bash.svg"
-              loading="lazy"
-              style="width: 33.5%"
-              alt="Bash Logo"
-            />
-            <p class="xlarge">Bash</p>
-          </div>
-          <div class="col m3">
-            <img
-              src="./imgs/docker.png"
-              loading="lazy"
-              style="width: 47%"
-              alt="Docker logo"
-            />
-            <p class="xlarge">Docker</p>
-          </div>
-          <div class="col m3">
-            <img
-              src="./imgs/oracle.svg"
-              loading="lazy"
-              style="width: 65%"
-              alt="Oracle logo"
-            />
-            <p class="xlarge">Oracle</p>
-          </div>
-        </div>
-      </div>
+					<div class="col m3">
+						<img
+							src="./imgs/swift.svg"
+							loading="lazy"
+							style="width: 33.5%"
+							alt="Swift Logo"
+						/>
+						<p class="xlarge">Swift</p>
+					</div>
 
-      <div class="bgimg-3 display-container opacity-min">
-        <div class="display-middle">
-          <span class="xxlarge text-white wide">CONTACT</span>
-        </div>
-      </div>
+					<div class="col m3">
+						<img
+							src="./imgs/cpp.svg"
+							loading="lazy"
+							style="width: 30%"
+							alt="C++ Logo"
+						/>
+						<p class="xlarge">C++</p>
+					</div>
+					<div class="col m3">
+						<img
+							src="./imgs/c.png"
+							loading="lazy"
+							style="width: 33.5%"
+							alt="C Logo"
+						/>
+						<p class="xlarge">C</p>
+					</div>
+				</div>
+				<div class="row-padding center section">
+					<div class="col m3">
+						<img
+							src="./imgs/html5.png"
+							loading="lazy"
+							style="width: 33.5%"
+							alt="HTML Logo"
+						/>
+						<p class="xlarge">HTML 5</p>
+					</div>
 
-      <div class="content container padding-64" id="contact">
-        <h3 class="center">WHERE I AM</h3>
-        <p class="center"><em>Reach me via any of these methods</em></p>
+					<div class="col m3">
+						<img
+							src="./imgs/css3.png"
+							loading="lazy"
+							style="width: 33.5%"
+							alt="CSS Logo"
+						/>
+						<p class="xlarge">CSS 3</p>
+					</div>
 
-        <div class="row padding-32 section">
-          <div class="col m4 container">
-            <div
-              id="googleMap"
-              class="round-large greyscale"
-              style="width: 100%; height: 400px"
-            >
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26771.929801785696!2d-96.75735039999998!3d32.99082239999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c21ff895e4aa5%3A0xd9098b32e9aa1331!2sThe%20University%20of%20Texas%20at%20Dallas!5e0!3m2!1sen!2sus!4v1711668784478!5m2!1sen!2sus"
-                width="600"
-                title="Map to my current location"
-                height="450"
-                loading="lazy"
-                frameborder="0"
-                style="border: 0; width: 100%; height: 400px"
-                ></iframe>
-            </div>
-          </div>
-          <div class="col m8 panel">
-            <div class="large margin-bottom">
-              <i
-                class="fas fa-map-marker fa-fw hover-text-black xlarge margin-right"
-              ></i>
-              The University of Texas at Dallas, Richardson, TX<br />
-              <i
-                class="fas fa-envelope fa-fw hover-text-black xlarge margin-right"
-              ></i>
-              Email: ariz.siddiqui@icloud.com<br />
-            </div>
-<!--             <p>
+					<div class="col m3">
+						<img
+							src="./imgs/javascript.png"
+							loading="lazy"
+							style="width: 33.5%"
+							alt="JavaScript Logo"
+						/>
+						<p class="xlarge">JavaScript</p>
+					</div>
+
+					<div class="col m3">
+						<img
+							src="./imgs/nodejs.png"
+							loading="lazy"
+							style="width: 33.5%"
+							alt="Node.js Logo"
+						/>
+						<p class="xlarge">Node.js</p>
+					</div>
+				</div>
+
+				<div class="row-padding center section">
+					<div class="col m3">
+						<img
+							src="./imgs/azure.svg"
+							loading="lazy"
+							style="width: 33.5%"
+							alt="Azure Logo"
+						/>
+						<p class="xlarge">Azure</p>
+					</div>
+
+					<div class="col m3">
+						<img
+							src="./imgs/git.png"
+							loading="lazy"
+							style="width: 33.5%"
+							alt="Git Logo"
+						/>
+						<p class="xlarge">Git</p>
+					</div>
+
+					<div class="col m3">
+						<img
+							src="./imgs/mysql.svg"
+							loading="lazy"
+							style="width: 63%"
+							alt="MySQL Logo"
+						/>
+						<p class="xlarge">MySQL</p>
+					</div>
+
+					<div class="col m3">
+						<img
+							src="./imgs/mongodb.svg"
+							loading="lazy"
+							style="width: 16.33%"
+							alt="MongoDB Logo"
+						/>
+						<p class="xlarge">MongoDB</p>
+					</div>
+				</div>
+				<div class="row-padding center section">
+					<div class="col m3">
+						<img
+							src="./imgs/java.svg"
+							loading="lazy"
+							style="width: 33.5%"
+							alt="Java Logo"
+						/>
+						<p class="xlarge">Java</p>
+					</div>
+					<div class="col m3">
+						<img
+							src="./imgs/bash.svg"
+							loading="lazy"
+							style="width: 33.5%"
+							alt="Bash Logo"
+						/>
+						<p class="xlarge">Bash</p>
+					</div>
+					<div class="col m3">
+						<img
+							src="./imgs/docker.png"
+							loading="lazy"
+							style="width: 47%"
+							alt="Docker logo"
+						/>
+						<p class="xlarge">Docker</p>
+					</div>
+					<div class="col m3">
+						<img
+							src="./imgs/oracle.svg"
+							loading="lazy"
+							style="width: 65%"
+							alt="Oracle logo"
+						/>
+						<p class="xlarge">Oracle</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="bgimg-3 display-container opacity-min">
+				<div class="display-middle">
+					<span class="xxlarge text-white wide">CONTACT</span>
+				</div>
+			</div>
+
+			<div class="content container padding-64" id="contact">
+				<h3 class="center">WHERE I AM</h3>
+				<p class="center"><em>Reach me via any of these methods</em></p>
+
+				<div class="row padding-32 section">
+					<div class="col m4 container">
+						<div
+							id="googleMap"
+							class="round-large greyscale"
+							style="width: 100%; height: 400px"
+						>
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26771.929801785696!2d-96.75735039999998!3d32.99082239999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c21ff895e4aa5%3A0xd9098b32e9aa1331!2sThe%20University%20of%20Texas%20at%20Dallas!5e0!3m2!1sen!2sus!4v1711668784478!5m2!1sen!2sus"
+								width="600"
+								title="Map to my current location"
+								height="450"
+								loading="lazy"
+								frameborder="0"
+								style="border: 0; width: 100%; height: 400px"
+							></iframe>
+						</div>
+					</div>
+					<div class="col m8 panel">
+						<div class="large margin-bottom">
+							<i
+								class="fas fa-map-marker fa-fw hover-text-black xlarge margin-right"
+							></i>
+							The University of Texas at Dallas, Richardson, TX<br />
+							<i
+								class="fas fa-envelope fa-fw hover-text-black xlarge margin-right"
+							></i>
+							Email: ariz.siddiqui@icloud.com<br />
+						</div>
+						<!--             <p>
               Not an email person? Fill out the form below, and I will try my
               best to reply.
             </p> -->
-<!--             <form
+						<!--             <form
               action="https://send.pageclip.co/hbAivsbVqJX7a7WfdiCKco9d0ELuP1Aw/contact-on-portfolio"
               method="POST"
               class="pageclip-form"
@@ -590,226 +683,226 @@
                 <i class="fa fa-paper-plane"></i> SEND MESSAGE
               </button>
             </form> -->
-          </div>
-        </div>
-      </div>
+					</div>
+				</div>
+			</div>
 
-      <footer class="center padding-64 opacity hover-opacity-off">
-        <p class="large">Reach out to me at:</p>
-        <div class="xlarge section">
-          <a href="https://www.facebook.com/ariz.siddiqui.10/"
-            ><i
-              class="fab fa-facebook-f padding-small hover-text-lapis xxlarge"
-            ></i
-          ></a>
-          <a href="https://www.instagram.com/rizz.against.the.machine/"
-            ><i
-              class="fab fa-instagram padding-small hover-text-purple xxlarge"
-            ></i
-          ></a>
-          <a href="https://www.kaggle.com/arizsiddiqui"
-            ><i class="fab fa-kaggle padding-small hover-text-aqua xxlarge"></i
-          ></a>
-          <a href="https://twitter.com/arizcoffeewala"
-            ><i
-              class="fab fa-twitter padding-small hover-text-light-blue xxlarge"
-            ></i
-          ></a>
-          <a href="https://github.com/arizsiddiqui"
-            ><i class="fab fa-github padding-small hover-text-black xxlarge"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/arizsiddiqui/"
-            ><i
-              class="fab fa-linkedin padding-small hover-text-blue xxlarge"
-            ></i
-          ></a>
-          <a href="http://arizsiddiqui.medium.com"
-            ><i class="fab fa-medium padding-small hover-text-black xxlarge"></i
-          ></a>
-        </div>
-        <br />
-        <p class="medium">
-          Best viewed on:<br />
-          <i class="fab fa-safari fa-2x hover-text-cyan" aria-hidden="true"></i>
-          <i
-            class="fab fa-edge padding-small fa-2x hover-text-lapis"
-            aria-hidden="true"
-          ></i>
-          <i
-            class="fab fa-firefox-browser fa-2x hover-text-deep-orange"
-            aria-hidden="true"
-          ></i>
-          <i class="fab fa-chrome fa-2x padding-small" aria-hidden="true"></i>
-        </p>
-        <p class="small">© 2024 Ariz Siddiqui</p>
-      </footer>
+			<footer class="center padding-64 opacity hover-opacity-off">
+				<p class="large">Reach out to me at:</p>
+				<div class="xlarge section">
+					<a href="https://www.facebook.com/ariz.siddiqui.10/"
+						><i
+							class="fab fa-facebook-f padding-small hover-text-lapis xxlarge"
+						></i
+					></a>
+					<a href="https://www.instagram.com/rizz.against.the.machine/"
+						><i
+							class="fab fa-instagram padding-small hover-text-purple xxlarge"
+						></i
+					></a>
+					<a href="https://www.kaggle.com/arizsiddiqui"
+						><i class="fab fa-kaggle padding-small hover-text-aqua xxlarge"></i
+					></a>
+					<a href="https://twitter.com/arizcoffeewala"
+						><i
+							class="fab fa-twitter padding-small hover-text-light-blue xxlarge"
+						></i
+					></a>
+					<a href="https://github.com/arizsiddiqui"
+						><i class="fab fa-github padding-small hover-text-black xxlarge"></i
+					></a>
+					<a href="https://www.linkedin.com/in/arizsiddiqui/"
+						><i
+							class="fab fa-linkedin padding-small hover-text-blue xxlarge"
+						></i
+					></a>
+					<a href="http://arizsiddiqui.medium.com"
+						><i class="fab fa-medium padding-small hover-text-black xxlarge"></i
+					></a>
+				</div>
+				<br />
+				<p class="medium">
+					Best viewed on:<br />
+					<i class="fab fa-safari fa-2x hover-text-cyan" aria-hidden="true"></i>
+					<i
+						class="fab fa-edge padding-small fa-2x hover-text-lapis"
+						aria-hidden="true"
+					></i>
+					<i
+						class="fab fa-firefox-browser fa-2x hover-text-deep-orange"
+						aria-hidden="true"
+					></i>
+					<i class="fab fa-chrome fa-2x padding-small" aria-hidden="true"></i>
+				</p>
+				<p class="small">© 2024 Ariz Siddiqui</p>
+			</footer>
 
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          var lazyloadImages;
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					var lazyloadImages;
 
-          if ("IntersectionObserver" in window) {
-            lazyloadImages = document.querySelectorAll(".lazy");
-            var imageObserver = new IntersectionObserver(function (
-              entries,
-              observer
-            ) {
-              entries.forEach(function (entry) {
-                if (entry.isIntersecting) {
-                  var image = entry.target;
-                  image.classList.remove("lazy");
-                  imageObserver.unobserve(image);
-                }
-              });
-            });
+					if ("IntersectionObserver" in window) {
+						lazyloadImages = document.querySelectorAll(".lazy");
+						var imageObserver = new IntersectionObserver(function (
+							entries,
+							observer
+						) {
+							entries.forEach(function (entry) {
+								if (entry.isIntersecting) {
+									var image = entry.target;
+									image.classList.remove("lazy");
+									imageObserver.unobserve(image);
+								}
+							});
+						});
 
-            lazyloadImages.forEach(function (image) {
-              imageObserver.observe(image);
-            });
-          } else {
-            var lazyloadThrottleTimeout;
-            lazyloadImages = document.querySelectorAll(".lazy");
+						lazyloadImages.forEach(function (image) {
+							imageObserver.observe(image);
+						});
+					} else {
+						var lazyloadThrottleTimeout;
+						lazyloadImages = document.querySelectorAll(".lazy");
 
-            function lazyload() {
-              if (lazyloadThrottleTimeout) {
-                clearTimeout(lazyloadThrottleTimeout);
-              }
+						function lazyload() {
+							if (lazyloadThrottleTimeout) {
+								clearTimeout(lazyloadThrottleTimeout);
+							}
 
-              lazyloadThrottleTimeout = setTimeout(function () {
-                var scrollTop = window.pageYOffset;
-                lazyloadImages.forEach(function (img) {
-                  if (img.offsetTop < window.innerHeight + scrollTop) {
-                    img.src = img.dataset.src;
-                    img.classList.remove("lazy");
-                  }
-                });
-                if (lazyloadImages.length == 0) {
-                  document.removeEventListener("scroll", lazyload);
-                  window.removeEventListener("resize", lazyload);
-                  window.removeEventListener("orientationChange", lazyload);
-                }
-              }, 20);
-            }
+							lazyloadThrottleTimeout = setTimeout(function () {
+								var scrollTop = window.pageYOffset;
+								lazyloadImages.forEach(function (img) {
+									if (img.offsetTop < window.innerHeight + scrollTop) {
+										img.src = img.dataset.src;
+										img.classList.remove("lazy");
+									}
+								});
+								if (lazyloadImages.length == 0) {
+									document.removeEventListener("scroll", lazyload);
+									window.removeEventListener("resize", lazyload);
+									window.removeEventListener("orientationChange", lazyload);
+								}
+							}, 20);
+						}
 
-            document.addEventListener("scroll", lazyload);
-            window.addEventListener("resize", lazyload);
-            window.addEventListener("orientationChange", lazyload);
-          }
-        });
+						document.addEventListener("scroll", lazyload);
+						window.addEventListener("resize", lazyload);
+						window.addEventListener("orientationChange", lazyload);
+					}
+				});
 
-        window.onscroll = function () {
-          myFunction();
-        };
-        function myFunction() {
-          var navbar = document.getElementById("myNavbar");
-          if (
-            document.body.scrollTop > 100 ||
-            document.documentElement.scrollTop > 100
-          ) {
-            navbar.className = "bar" + " card" + " animate-top" + " white";
-          } else {
-            navbar.className = navbar.className.replace(
-              " card animate-top white",
-              ""
-            );
-          }
-        }
+				window.onscroll = function () {
+					myFunction();
+				};
+				function myFunction() {
+					var navbar = document.getElementById("myNavbar");
+					if (
+						document.body.scrollTop > 100 ||
+						document.documentElement.scrollTop > 100
+					) {
+						navbar.className = "bar" + " card" + " animate-top" + " white";
+					} else {
+						navbar.className = navbar.className.replace(
+							" card animate-top white",
+							""
+						);
+					}
+				}
 
-        function scrollFunction() {
-          document
-            .getElementById("about")
-            .scrollIntoView({ behavior: "smooth" });
-          var array = ["home-btn", "about-btn", "portfolio-btn", "contact-btn"];
-          if (
-            document.getElementById("home").className.indexOf("hover" != -1)
-          ) {
-            for (let i = 0; i < array.length; i++) {
-              var x = document.getElementById(array[i]);
-              x.className = x.className.replace(" hover", "");
-              if (x.className.indexOf(" disabled") != -1) {
-                x.className = x.className.replace(" disabled", "");
-              }
-            }
-          }
-          var x = document.getElementById("about-btn");
-          x.className += " disabled";
-        }
+				function scrollFunction() {
+					document
+						.getElementById("about")
+						.scrollIntoView({ behavior: "smooth" });
+					var array = ["home-btn", "about-btn", "portfolio-btn", "contact-btn"];
+					if (
+						document.getElementById("home").className.indexOf("hover" != -1)
+					) {
+						for (let i = 0; i < array.length; i++) {
+							var x = document.getElementById(array[i]);
+							x.className = x.className.replace(" hover", "");
+							if (x.className.indexOf(" disabled") != -1) {
+								x.className = x.className.replace(" disabled", "");
+							}
+						}
+					}
+					var x = document.getElementById("about-btn");
+					x.className += " disabled";
+				}
 
-        function scrollFunction1() {
-          document
-            .getElementById("portfolio")
-            .scrollIntoView({ behavior: "smooth" });
-          var array = ["home-btn", "about-btn", "portfolio-btn", "contact-btn"];
-          if (
-            document.getElementById("home").className.indexOf("hover" != -1)
-          ) {
-            for (let i = 0; i < array.length; i++) {
-              var x = document.getElementById(array[i]);
-              x.className = x.className.replace(" hover", "");
-              if (x.className.indexOf(" disabled") != -1) {
-                x.className = x.className.replace(" disabled", "");
-              }
-            }
-          }
-          var x = document.getElementById("portfolio-btn");
-          x.className += " disabled";
-        }
+				function scrollFunction1() {
+					document
+						.getElementById("portfolio")
+						.scrollIntoView({ behavior: "smooth" });
+					var array = ["home-btn", "about-btn", "portfolio-btn", "contact-btn"];
+					if (
+						document.getElementById("home").className.indexOf("hover" != -1)
+					) {
+						for (let i = 0; i < array.length; i++) {
+							var x = document.getElementById(array[i]);
+							x.className = x.className.replace(" hover", "");
+							if (x.className.indexOf(" disabled") != -1) {
+								x.className = x.className.replace(" disabled", "");
+							}
+						}
+					}
+					var x = document.getElementById("portfolio-btn");
+					x.className += " disabled";
+				}
 
-        function scrollFunction2() {
-          document
-            .getElementById("contact")
-            .scrollIntoView({ behavior: "smooth" });
-          var array = ["home-btn", "about-btn", "portfolio-btn", "contact-btn"];
-          if (
-            document.getElementById("home").className.indexOf("hover" != -1)
-          ) {
-            for (let i = 0; i < array.length; i++) {
-              var x = document.getElementById(array[i]);
-              x.className = x.className.replace(" hover", "");
-              if (x.className.indexOf(" disabled") != -1) {
-                x.className = x.className.replace(" disabled", "");
-              }
-            }
-          }
-          var x = document.getElementById("contact-btn");
-          x.className += " disabled";
-        }
+				function scrollFunction2() {
+					document
+						.getElementById("contact")
+						.scrollIntoView({ behavior: "smooth" });
+					var array = ["home-btn", "about-btn", "portfolio-btn", "contact-btn"];
+					if (
+						document.getElementById("home").className.indexOf("hover" != -1)
+					) {
+						for (let i = 0; i < array.length; i++) {
+							var x = document.getElementById(array[i]);
+							x.className = x.className.replace(" hover", "");
+							if (x.className.indexOf(" disabled") != -1) {
+								x.className = x.className.replace(" disabled", "");
+							}
+						}
+					}
+					var x = document.getElementById("contact-btn");
+					x.className += " disabled";
+				}
 
-        function topFunction() {
-          document
-            .getElementById("home")
-            .scrollIntoView({ behavior: "smooth" });
-          var array = ["home-btn", "about-btn", "portfolio-btn", "contact-btn"];
-          for (let i = 0; i < array.length; i++) {
-            var x = document.getElementById(array[i]);
-            x.className += " hover";
-            if (x.className.indexOf(" disabled") != -1) {
-              x.className = x.className.replace(" disabled", "");
-            }
-          }
-          var x = document.getElementById("home-btn");
-          x.className += " disabled";
-        }
+				function topFunction() {
+					document
+						.getElementById("home")
+						.scrollIntoView({ behavior: "smooth" });
+					var array = ["home-btn", "about-btn", "portfolio-btn", "contact-btn"];
+					for (let i = 0; i < array.length; i++) {
+						var x = document.getElementById(array[i]);
+						x.className += " hover";
+						if (x.className.indexOf(" disabled") != -1) {
+							x.className = x.className.replace(" disabled", "");
+						}
+					}
+					var x = document.getElementById("home-btn");
+					x.className += " disabled";
+				}
 
-        function toggleFunction() {
-          var x = document.getElementById("smallNav");
-          if (x.className.indexOf("show") == -1) {
-            x.className += " show";
-          } else {
-            x.className = x.className.replace(" show", " hide");
-          }
-        }
-      </script>
-      <script
-        src="https://kit.fontawesome.com/f4468ff4ca.js"
-        crossorigin="anonymous"
-        defer
-      ></script>
-      <script
-        src="https://s.pageclip.co/v1/pageclip.js"
-        charset="utf-8"
-        defer
-      ></script>
-    </body>
-  </head>
+				function toggleFunction() {
+					var x = document.getElementById("smallNav");
+					if (x.className.indexOf("show") == -1) {
+						x.className += " show";
+					} else {
+						x.className = x.className.replace(" show", " hide");
+					}
+				}
+			</script>
+			<script
+				src="https://kit.fontawesome.com/f4468ff4ca.js"
+				crossorigin="anonymous"
+				defer
+			></script>
+			<script
+				src="https://s.pageclip.co/v1/pageclip.js"
+				charset="utf-8"
+				defer
+			></script>
+		</body>
+	</head>
 </html>
